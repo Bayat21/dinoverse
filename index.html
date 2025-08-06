@@ -6,8 +6,23 @@
     <link href="/dist/styles.css" rel="stylesheet" />
   </head>
   <body class="h-screen bg-cover bg-blue-green-gradient">
-    <div class="container mx-auto min-h-[117rem] max-w-[120rem] bg-white my-[4vw] overflow-hidden ">
-      <header class="w-full "></header>
+    <div
+      class="container mx-auto min-h-[117rem] bg-white my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid"
+    >
+      <header class="w-full">
+        <img src="./src/img/logo.png" alt="logo" />
+        <form>
+          <input type="text" placeholder="Search over 100 dinosaurs..." />
+          <button>
+            <svg>
+              <use href="./src/img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <nav></nav>
+      </header>
+      <div></div>
+      <div></div>
     </div>
   </body>
 </html>
