@@ -7,22 +7,30 @@
   </head>
   <body class="h-screen bg-cover bg-blue-green-gradient">
     <div
-      class="container mx-auto min-h-[117rem] bg-white my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid"
+      class="container mx-auto min-h-[117rem] max-w-[120rem] bg-red-400 my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
     >
-      <header class="w-full">
-        <img src="./src/img/logo.png" alt="logo" />
-        <form>
-          <input type="text" placeholder="Search over 100 dinosaurs..." />
-          <button>
-            <svg>
+      <header
+        class="w-full col-span-2 row-span-1 grid-rows-subgrid flex items-center justify-evenly px-[2rem] py-[1rem] bg-white max-h-[10rem]"
+      >
+        <img src="./src/img/logo.png" alt="logo" class="w-1/3" />
+        <form class="">
+          <input
+            type="text"
+            placeholder="Search over 100 prehistric animals..."
+          />
+          <button class="text-sm">
+            <svg class="w-[1.5rem] h-[1.5rem]">
               <use href="./src/img/icons.svg#icon-search"></use>
             </svg>
           </button>
         </form>
-        <nav></nav>
+        <nav class="bg-amber-500">
+          <div>fddjf</div>
+          <div>fdnbvhd</div>
+        </nav>
       </header>
-      <div></div>
-      <div></div>
+      <div class="bg-blue-500"></div>
+      <div class="bg-fuchsia-500"></div>
     </div>
   </body>
 </html>
