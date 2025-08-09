@@ -5,28 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/styles.css" rel="stylesheet" />
   </head>
-  <body class="h-screen bg-cover bg-blue-green-gradient">
+  <body class="h-screen bg-cover bg-blue-green-gradient bg-no-repeat">
     <div
-      class="container mx-auto min-h-[117rem] max-w-[120rem] bg-red-400 my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
+      class="container mx-auto min-h-[117rem] max-w-[120rem] my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
     >
       <header
-        class="w-full col-span-2 row-span-1 grid-rows-subgrid flex items-center justify-evenly px-[2rem] py-[1rem] bg-white max-h-[10rem]"
+        class="w-full col-span-2 row-span-1 grid-rows-subgrid flex items-center justify-around px-[1rem] py-[1rem] bg-light-green min-h-[6.5rem] gap-[0.5rem]"
       >
-        <img src="./src/img/logo.png" alt="logo" class="w-1/3" />
-        <form class="">
+        <img
+          src="./src/img/logo.png"
+          alt="logo"
+          class="h-auto max-h-[3rem] w-auto max-w-[11rem]"
+        />
+        <form class="w-[20rem]  relative translate-x-[-10px]">
           <input
             type="text"
             placeholder="Search over 100 prehistric animals..."
+            class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs"
           />
-          <button class="text-sm">
+          <button
+            class="bg-blue-green-gradient h-full w-[3rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center"
+          >
             <svg class="w-[1.5rem] h-[1.5rem]">
               <use href="./src/img/icons.svg#icon-search"></use>
             </svg>
           </button>
         </form>
-        <nav class="bg-amber-500">
-          <div>fddjf</div>
-          <div>fdnbvhd</div>
+        <nav>
+          <ul class="flex flex-col justify-center items-center">
+            <li>
+              <button class="text-lime-green ">
+                <svg class="w-[1.2rem] h-[1.2rem] fill-current">
+                  <use href="./src/img/icons.svg#icon-edit"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button class="text-lime-green text-center">
+                <svg class="w-[1.2rem] h-[1.2rem] fill-current">
+                  <use href="./src/img/icons.svg#icon-bookmark"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
         </nav>
       </header>
       <div class="bg-blue-500"></div>
