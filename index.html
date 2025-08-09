@@ -5,46 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/styles.css" rel="stylesheet" />
   </head>
-  <body class="h-screen bg-cover bg-blue-green-gradient bg-no-repeat">
+  <body class="bg-blue-green-gradient bg-cover bg-no-repeat">
     <div
-      class="container mx-auto min-h-[117rem] max-w-[120rem] my-[4vw] overflow-hidden shadow-2xl rounded-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
+      class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
     >
       <header
-        class="w-full col-span-2 row-span-1 grid-rows-subgrid flex items-center justify-around px-[1rem] py-[1rem] bg-light-green min-h-[6.5rem] gap-[0.5rem] xs:bg-red-500"
+        class="w-full col-span-2 row-span-1 flex items-center justify-around px-[1rem] py-[1rem] bg-light-green min-h-[6.5rem] gap-[0.5rem] @2xl:min-h-[8rem] @5xl:min-h-[9rem] @8xl:min-h-[10rem]"
       >
         <img
           src="./src/img/logo.png"
           alt="logo"
-          class="h-auto max-h-[3rem] w-auto max-w-[11rem]"
+          class="h-auto w-auto max-w-[11rem] @2xl:max-w-[16rem] @5xl:max-w-[17rem] @8xl:max-w-[20rem]"
         />
-        <form class="w-[20rem] relative translate-x-[-10px]">
+        <form
+          class="w-[20rem] relative translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[47rem]"
+        >
           <input
             type="text"
             placeholder="Search over 100 prehistric animals..."
-            class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs"
+            class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs @2xl:min-h-[3.5rem] @2xl:text-sm @5xl:min-h-[4.5rem] @5xl:text-[1rem] @8xl:min-h-[5rem] @8xl:text-2xl @8xl:px-[3rem]"
           />
           <button
-            class="bg-blue-green-gradient h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center"
+            class="bg-blue-green-gradient text-white h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[17rem] @8xl:px-[4rem]"
           >
-            <svg class="w-[1.5rem] h-[1.5rem]">
+            <svg
+              class="w-[1.5rem] h-[1.5rem] fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+            >
               <use href="./src/img/icons.svg#icon-search"></use>
             </svg>
+            <span
+              class="hidden @5xl:block @5xl:text-base @5xl:font-bold @5xl:pl-[3px] @8xl:text-2xl"
+              >SEARCH</span
+            >
           </button>
         </form>
-        <nav>
-          <ul class="flex flex-col justify-center items-center">
+        <nav class="">
+          <ul
+            class="flex flex-col justify-center items-center @2xl:flex-row @2xl:gap-[1rem] @8xl:gap-[2rem]"
+          >
             <li>
-              <button class="text-regal-blue">
-                <svg class="w-[1.2rem] h-[1.2rem] fill-current">
+              <button class="text-regal-blue flex items-center @2xl:gap-[3px]">
+                <svg
+                  class="w-[1.2rem] h-[1.2rem] fill-current @2xl:w-[2rem] @2xl:h-[2rem]"
+                >
                   <use href="./src/img/icons.svg#icon-edit"></use>
                 </svg>
+                <span
+                  class="hidden @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  >ADD CARD</span
+                >
               </button>
             </li>
             <li>
-              <button class="text-regal-blue text-center">
-                <svg class="w-[1.2rem] h-[1.2rem] fill-current">
+              <button class="text-regal-blue flex items-center @2xl:gap-[3px]">
+                <svg
+                  class="w-[1.2rem] h-[1.2rem] fill-current @2xl:w-[2rem] @2xl:h-[2rem]"
+                >
                   <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
+                <span
+                  class="hidden @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  >BOOKMARKS</span
+                >
               </button>
             </li>
           </ul>
