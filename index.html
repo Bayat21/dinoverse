@@ -18,15 +18,15 @@
           class="h-auto w-auto max-w-[11rem] @2xl:max-w-[16rem] @5xl:max-w-[17rem] @8xl:max-w-[20rem]"
         />
         <form
-          class="w-[20rem] relative translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[47rem]"
+          class="w-[20rem] relative group translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[47rem]"
         >
           <input
             type="text"
-            placeholder="Search over 100 prehistric animals..."
-            class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs @2xl:min-h-[3.5rem] @2xl:text-sm @5xl:min-h-[4.5rem] @5xl:text-[1rem] @8xl:min-h-[5rem] @8xl:text-2xl @8xl:px-[3rem]"
+            placeholder="Search over 100 prehistoric animals..."
+            class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs outline-none focus:shadow-lg focus:translate-y-[-2px] @2xl:min-h-[3.5rem] @2xl:text-sm @5xl:min-h-[4.5rem] @5xl:text-[1rem] @8xl:min-h-[5rem] @8xl:text-2xl @8xl:px-[3rem]"
           />
           <button
-            class="bg-blue-green-gradient text-white h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[17rem] @8xl:px-[4rem]"
+            class="bg-blue-green-gradient text-white h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center group-focus-within:translate-y-[-2px] @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[17rem] @8xl:px-[4rem]"
           >
             <svg
               class="w-[1.5rem] h-[1.5rem] fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
@@ -41,7 +41,7 @@
         </form>
         <nav class="">
           <ul
-            class="flex flex-col justify-center items-center @2xl:flex-row @2xl:gap-[1rem] @8xl:gap-[2rem]"
+            class="flex flex-col justify-center items-center gap-[2px] @2xl:flex-row @2xl:gap-[1rem] @8xl:gap-[2rem]"
           >
             <li>
               <button class="text-regal-blue flex items-center @2xl:gap-[3px]">
@@ -51,9 +51,9 @@
                   <use href="./src/img/icons.svg#icon-edit"></use>
                 </svg>
                 <span
-                  class="hidden @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
-                  >ADD CARD</span
-                >
+                  class="hidden text-black @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  >ADD CARD
+                </span>
               </button>
             </li>
             <li>
@@ -64,9 +64,9 @@
                   <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <span
-                  class="hidden @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
-                  >BOOKMARKS</span
-                >
+                  class="hidden text-black @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  >BOOKMARKS
+                </span>
               </button>
             </li>
           </ul>
