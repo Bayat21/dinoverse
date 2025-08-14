@@ -76,18 +76,24 @@
           </ul>
         </nav>
       </header>
-      <div class="bg-white">
+      <div class="bg-white flex flex-col">
         <!--<svg class="animate-spin w-[2.5rem] h-[2.5rem] @2xl:w-[4.5rem] @2xl:h-[4.5rem]">
           <use href="./src/img/icons.svg#icon-loader"></use>
         </svg>-->
-        <li>
-          <a href="">
-            <figure>
-              <img src="#" alt="" />
+        <li
+          class="list-none px-[5px] h-[4rem] py-[0.75rem] overflow-hidden bg-amber-500"
+        >
+          <a href="#" class="flex flex-row gap-[2px]">
+            <figure class="flex-shrink-0">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Stegosaurus_Senckenberg.jpg"
+                alt="Stegosaurus"
+                class="w-[2.5rem] h-[2.5rem] rounded-full object-cover"
+              />
             </figure>
-            <div>
-              <h4></h4>
-              <p></p>
+            <div class="flex flex-col justify-center">
+              <h4 class="text-red-700 text-sm">Stegosaurus</h4>
+              <p class="text-xs">wikipedia</p>
               <div>
                 <svg>
                   <use href="#"></use>
@@ -97,6 +103,7 @@
           </a>
         </li>
       </div>
+
       <div class="bg-grey-2"></div>
     </div>
   </body>
