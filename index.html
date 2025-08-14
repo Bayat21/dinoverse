@@ -10,7 +10,7 @@
       class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-cols-2 grid-rows-[auto_1fr]"
     >
       <header
-        class="w-full col-span-2 row-span-1 flex items-center justify-around px-[1rem] py-[1rem] bg-light-green min-h-[6.5rem] gap-[0.5rem] @2xl:min-h-[8rem] @5xl:min-h-[9rem] @8xl:min-h-[10rem]"
+        class="w-full col-span-2 row-span-1 flex items-center justify-around px-[1rem]  bg-light-green min-h-[6.5rem] gap-[0.5rem] @2xl:min-h-[8rem] @5xl:min-h-[9rem] @8xl:min-h-[10rem]"
       >
         <img
           src="./src/img/logo.png"
@@ -18,7 +18,7 @@
           class="h-auto w-auto max-w-[11rem] @2xl:max-w-[16rem] @5xl:max-w-[17rem] @8xl:max-w-[20rem]"
         />
         <form
-          class="w-[20rem] relative group translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[47rem]"
+          class="w-[20rem] relative group translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[45rem]"
         >
           <input
             type="text"
@@ -39,24 +39,24 @@
             >
           </button>
         </form>
-        <nav class="">
+        <nav class="h-full flex items-center justify-center px-[2px]">
           <ul
-            class="flex flex-col justify-center items-center gap-[2px] @2xl:flex-row @2xl:gap-[1rem] @8xl:gap-[2rem]"
+            class="h-full flex flex-col justify-center gap-[4px] items-center @2xl:gap-0 @2xl:flex-row @2xl:justify-around"
           >
-            <li>
-              <button class="text-regal-blue flex items-center @2xl:gap-[3px]">
+            <li class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 @2xl:h-full @2xl:px-[5px]">
+              <button class="text-regal-blue flex items-center @2xl:gap-[3px]"> 
                 <svg
                   class="w-[1.2rem] h-[1.2rem] fill-current @2xl:w-[2rem] @2xl:h-[2rem]"
                 >
                   <use href="./src/img/icons.svg#icon-edit"></use>
                 </svg>
                 <span
-                  class="hidden text-black @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  class="hidden text-black @5xl:block @5xl:text-lg @5xl:font-bold @8xl:text-xl"
                   >ADD CARD
                 </span>
               </button>
             </li>
-            <li>
+            <li class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 @2xl:h-full @2xl:px-[5px]">
               <button class="text-regal-blue flex items-center @2xl:gap-[3px]">
                 <svg
                   class="w-[1.2rem] h-[1.2rem] fill-current @2xl:w-[2rem] @2xl:h-[2rem]"
@@ -64,7 +64,7 @@
                   <use href="./src/img/icons.svg#icon-bookmark"></use>
                 </svg>
                 <span
-                  class="hidden text-black @5xl:block @5xl:text-xl @5xl:font-bold @8xl:text-2xl"
+                  class="hidden text-black @5xl:block @5xl:text-lg @5xl:font-bold @8xl:text-xl"
                   >BOOKMARKS
                 </span>
               </button>
