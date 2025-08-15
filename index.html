@@ -124,50 +124,84 @@
           </button>
         </div>-->
       </div>
-      <div>
-        <figure>
-          <img src="#" alt="" />
-          <h1>
-            <span></span>
+      <div class="bg-grey-2">
+        <figure class="">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Stegosaurus_Senckenberg.jpg"
+            alt="Stegosaurus"
+            class="w-full h-[15rem] object-cover"
+          />
+          <h1 class="flex items-center justify-center">
+            <span
+              class="text-white bg-blue-green-gradient px-[1rem] py-[0.5rem] font-bold text-[15px] skew-y-[-6deg] translate-y-[-50%]"
+              >STEGOSAURUS</span
+            >
           </h1>
         </figure>
-        <div>
-          <div>
-            <svg>
-              <use href="#"></use>
-            </svg>
-            <span></span>
+        <div class="flex justify-between items-center p-[0.5rem]">
+          <div class="flex basis-2/3 justify-between">
+            <div class="flex gap-[3px] items-center">
+              <svg
+                class="w-[1.5rem] h-[1.5rem] text-light-blue fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-clock"></use>
+              </svg>
+              <span class="text-xs">LATE CRETACEOUS</span>
+            </div>
+            <div class="flex gap-[3px] items-center">
+              <svg
+                class="w-[1.5rem] h-[1.5rem] text-light-blue fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-users"></use>
+              </svg>
+              <span class="text-xs">LIKELY SOLITARY</span>
+            </div>
           </div>
           <div>
-            <svg>
-              <use href="#"></use>
-            </svg>
-            <span></span>
+            <button>
+              <svg
+                class="w-[1.5rem] h-[1.5rem] text-light-blue fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-bookmark"></use>
+              </svg>
+            </button>
           </div>
         </div>
-        <div>
-          <button>
-            <svg>
-              <use href="#"></use>
-            </svg>
-          </button>
-        </div>
-        <div>
-          <h2></h2>
-          <ul>
-            <li>
-              <svg>
-                <use href="#"></use>
+        <div class="bg-grey-3 w-full flex flex-col items-center px-[1rem] py-[1rem] gap-[1rem] shadow-sm">
+          <h2 class="font-bold text-regal-blue">SPECIFICATIONS</h2>
+          <ul class="w-full grid grid-cols-2 gap-[1rem]">
+            <li class="flex gap-[2px] justify-start">
+              <svg
+                class="w-[1.5rem] h-[1.5rem] text-regal-blue fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-check"></use>
               </svg>
               <div>
-                <span></span>
+                <span class="text-sm">group: Theropod</span>
+              </div>
+            </li>
+
+            <li class="flex gap-[2px] justify-start">
+              <svg
+                class="w-[1.5rem] h-[1.5rem] text-regal-blue fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-check"></use>
+              </svg>
+              <div>
+                <span class="text-sm">group: Theropod</span>
               </div>
             </li>
           </ul>
         </div>
-      </div>
 
-      <div class="bg-grey-2"></div>
+        <div class=" w-full flex flex-col items-center px-[1rem] py-[1rem] gap-[1rem]">
+          <h2 class="font-bold text-regal-blue">DESCRIPTION</h2>
+          <p class="text-sm">
+            Easily recognized by its double row of kite-shaped plates and spiked
+            tail.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
