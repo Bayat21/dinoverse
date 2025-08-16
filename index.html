@@ -7,7 +7,7 @@
   </head>
   <body class="bg-blue-green-gradient bg-cover bg-no-repeat">
     <div
-      class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-rows-[auto_1fr] grid-cols-[minmax(100px,1fr)_minmax(200px,2fr)]"
+      class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-rows-[auto_1fr] grid-cols-[minmax(100px,1fr)_minmax(200px,2fr)] relative"
     >
       <header
         class="w-full col-span-2 row-span-1 flex items-center justify-between px-[1rem] bg-grey-2 min-h-[6.5rem] gap-[0.5rem] @2xl:min-h-[8rem] @5xl:min-h-[9rem] @5xl:px-[2rem] @8xl:min-h-[10rem] relative"
@@ -72,7 +72,7 @@
                   >BOOKMARKS
                 </span>
               </button>
-              <div
+              <!--<div
                 class="absolute top-[100%] right-0 bg-white w-[14rem] @5xl:w-[20rem]"
               >
                 <ul class="w-full flex flex-col items-start">
@@ -105,7 +105,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div>-->
             </li>
           </ul>
         </nav>
@@ -178,7 +178,7 @@
           class="flex justify-between items-center p-[0.5rem] @2xl:p-[1.5rem] @5xl:px-[2rem] @8xl:px-[2.5rem] @8xl:py-[2rem]"
         >
           <div
-            class="flex w-[16rem] justify-start gap-[3px] @2xl:gap-[1rem] @2xl:w-[22rem] @5xl:w-[30rem] @8xl:w-[60rem] @8xl:gap-[2rem]"
+            class="flex w-[16rem] justify-start gap-[3px] @2xl:gap-[1rem] @2xl:w-[22rem] @5xl:w-[30rem] @8xl:w-[50rem] @8xl:gap-[2rem]"
           >
             <div class="flex gap-[3px] items-center">
               <svg
@@ -203,14 +203,14 @@
               >
             </div>
           </div>
-          <div class="flex gap-2 items-center">
-            <div class="flex items-center justify-center">
+          <div class="flex gap-2 items-center justify-center @8xl:gap-[1.5rem]">
+            <!--<div class="flex items-center justify-center">
               <svg
-                class="w-[2rem] h-[2rem] text-light-blue bg-grey-3 fill-current rounded-full p-[3px] @8xl:p-[5px] @8xl:w-[3rem] @8xl:h-[3rem] @8xl:gap-[2rem]"
+                class="w-[2rem] h-[2rem] text-light-blue bg-grey-3 fill-current rounded-full p-[3px] @8xl:p-[5px] @8xl:w-[3rem] @8xl:h-[3rem]"
               >
                 <use href="./src/img/icons.svg#icon-user"></use>
               </svg>
-            </div>
+            </div>-->
             <button>
               <svg
                 class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem]"
@@ -272,6 +272,87 @@
             tail.
           </p>
         </div>
+      </div>
+
+      <div class="absolute left-[50%] top-[20%] translate-x-[-50%] bg-white">
+        <button class="absolute top-1 right-2">&times;</button>
+        <form class="w-full flex flex-wrap">
+          <div class="w-[50%]">
+            <h3>Ingredients</h3>
+            <label>Ingredient 1</label>
+            <input
+              value="0.5,kg,Rice"
+              type="text"
+              required
+              name="ingredient-1"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+            <label>Ingredient 2</label>
+            <input
+              value="1,,Avocado"
+              type="text"
+              name="ingredient-2"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+            <label>Ingredient 3</label>
+            <input
+              value=",,salt"
+              type="text"
+              name="ingredient-3"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+            <label>Ingredient 4</label>
+            <input
+              type="text"
+              name="ingredient-4"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+            <label>Ingredient 5</label>
+            <input
+              type="text"
+              name="ingredient-5"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+            <label>Ingredient 6</label>
+            <input
+              type="text"
+              name="ingredient-6"
+              placeholder="Format: 'Quantity,Unit,Description'"
+            />
+          </div>
+
+          <div class="w-[50%]">
+            <h3>Recipe data</h3>
+            <label>Title</label>
+            <input value="TEST" required name="title" type="text" />
+            <label>URL</label>
+            <input value="TEST" required name="sourceUrl" type="text" />
+            <label>Image URL</label>
+            <input value="TEST" required name="image" type="text" />
+            <label>Publisher</label>
+            <input value="TEST" required name="publisher" type="text" />
+            <label>Prep time</label>
+            <input value="23" required name="cookingTime" type="number" />
+            <label>Servings</label>
+            <input value="23" required name="servings" type="number" />
+          </div>
+
+          <div class="w-[100%] flex justify-center">
+            <button
+              class="bg-blue-green-gradient text-white py-[1rem] w-[3.2rem] rounded-full flex items-center justify-center group-focus-within:translate-y-[-2px] @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[14rem] @8xl:px-[2rem]"
+            >
+              <svg
+                class="w-[1.5rem] h-[1.5rem] fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+              >
+                <use href="./src/img/icons.svg#icon-upload-cloud"></use>
+              </svg>
+              <span
+                class="hidden @5xl:block @5xl:text-base @5xl:font-bold @5xl:pl-[3px] @8xl:text-2xl"
+                >UPLOAD</span
+              >
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
