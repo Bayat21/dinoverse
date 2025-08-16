@@ -274,80 +274,88 @@
         </div>
       </div>
 
-      <div class="absolute left-[50%] top-[20%] translate-x-[-50%] bg-white">
-        <button class="absolute top-1 right-2">&times;</button>
-        <form class="w-full flex flex-wrap">
-          <div class="w-[50%]">
-            <h3>Ingredients</h3>
-            <label>Ingredient 1</label>
+      <div
+        class="absolute left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
+      >
+        <button class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem]">&times;</button>
+        <form class="w-full flex flex-wrap ">
+          <div class="w-[50%] pr-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem]  @5xl:items-center @8xl:gap-[2rem]">
+            <h3 class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]">Recipe data</h3>
+            <label class="add-card-label">Title</label>
+            <input value="TEST" required name="title" type="text" class="add-card-input"/>
+            <label class="add-card-label">URL</label>
+            <input value="TEST" required name="sourceUrl" type="text" class="add-card-input"/>
+            <label class="add-card-label">Image URL</label>
+            <input value="TEST" required name="image" type="text" class="add-card-input"/>
+            <label class="add-card-label">Publisher</label>
+            <input value="TEST" required name="publisher" type="text" class="add-card-input"/>
+            <label class="add-card-label">Prep time</label>
+            <input value="23" required name="cookingTime" type="number" class="add-card-input"/>
+            <label class="add-card-label">Servings</label>
+            <input value="23" required name="servings" type="number" class="add-card-input"/>
+          </div>
+
+          <div class="w-[50%] pl-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem]  @5xl:items-center @8xl:gap-[2rem]">
+            <h3 class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]">Ingredients</h3>
+            <label class="add-card-label">Ingredient 1</label>
             <input
               value="0.5,kg,Rice"
               type="text"
               required
               name="ingredient-1"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
-            <label>Ingredient 2</label>
+            <label class="add-card-label">Ingredient 2</label>
             <input
               value="1,,Avocado"
               type="text"
               name="ingredient-2"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
-            <label>Ingredient 3</label>
+            <label class="add-card-label">Ingredient 3</label>
             <input
               value=",,salt"
               type="text"
               name="ingredient-3"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
-            <label>Ingredient 4</label>
+            <label class="add-card-label">Ingredient 4</label>
             <input
               type="text"
               name="ingredient-4"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
-            <label>Ingredient 5</label>
+            <label class="add-card-label">Ingredient 5</label>
             <input
               type="text"
               name="ingredient-5"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
-            <label>Ingredient 6</label>
+            <label class="add-card-label">Ingredient 6</label>
             <input
               type="text"
               name="ingredient-6"
               placeholder="Format: 'Quantity,Unit,Description'"
+              class="add-card-input"
             />
           </div>
 
-          <div class="w-[50%]">
-            <h3>Recipe data</h3>
-            <label>Title</label>
-            <input value="TEST" required name="title" type="text" />
-            <label>URL</label>
-            <input value="TEST" required name="sourceUrl" type="text" />
-            <label>Image URL</label>
-            <input value="TEST" required name="image" type="text" />
-            <label>Publisher</label>
-            <input value="TEST" required name="publisher" type="text" />
-            <label>Prep time</label>
-            <input value="23" required name="cookingTime" type="number" />
-            <label>Servings</label>
-            <input value="23" required name="servings" type="number" />
-          </div>
-
-          <div class="w-[100%] flex justify-center">
+          <div class="w-[100%] flex justify-center pt-[2rem] @8xl:pt-[3rem]">
             <button
-              class="bg-blue-green-gradient text-white py-[1rem] w-[3.2rem] rounded-full flex items-center justify-center group-focus-within:translate-y-[-2px] @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[14rem] @8xl:px-[2rem]"
+              class="bg-blue-green-gradient text-white py-[0.6rem] w-[8rem] rounded-full flex items-center justify-center gap-[3px] @2xl:w-[8rem] @5xl:px-[1.5rem] @5xl:py-[1rem] @5xl:w-[11rem] @8xl:w-[14rem] @8xl:px-[2rem]  "
             >
               <svg
-                class="w-[1.5rem] h-[1.5rem] fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
+                class="w-[1.5rem] h-[1.5rem] fill-current  @5xl:w-[2rem] @5xl:h-[2rem]  @8xl:h-[2.5rem] @8xl:w-[2.5rem]"
               >
                 <use href="./src/img/icons.svg#icon-upload-cloud"></use>
               </svg>
               <span
-                class="hidden @5xl:block @5xl:text-base @5xl:font-bold @5xl:pl-[3px] @8xl:text-2xl"
+                class=" text-base font-bold @5xl:text-[14px] @8xl:text-[17px]"
                 >UPLOAD</span
               >
             </button>
