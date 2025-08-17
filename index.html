@@ -277,26 +277,78 @@
       <div
         class="absolute left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
       >
-        <button class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem]">&times;</button>
-        <form class="w-full flex flex-wrap ">
-          <div class="w-[50%] pr-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem]  @5xl:items-center @8xl:gap-[2rem]">
-            <h3 class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]">Recipe data</h3>
-            <label class="add-card-label">Title</label>
-            <input value="TEST" required name="title" type="text" class="add-card-input"/>
+        <button
+          class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem]"
+        >
+          &times;
+        </button>
+        <form class="w-full flex flex-wrap">
+          <div
+            class="w-[50%] pr-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem] @5xl:items-center @8xl:gap-[2rem]"
+          >
+            <h3
+              class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]"
+            >
+              Recipe data
+            </h3>
+            <label class="add-card-label">Name</label>
+            <input
+              value="TEST"
+              required
+              name="title"
+              type="text"
+              class="add-card-input"
+            />
             <label class="add-card-label">URL</label>
-            <input value="TEST" required name="sourceUrl" type="text" class="add-card-input"/>
+            <input
+              value="TEST"
+              required
+              name="sourceUrl"
+              type="text"
+              class="add-card-input"
+            />
             <label class="add-card-label">Image URL</label>
-            <input value="TEST" required name="image" type="text" class="add-card-input"/>
-            <label class="add-card-label">Publisher</label>
-            <input value="TEST" required name="publisher" type="text" class="add-card-input"/>
+            <input
+              value="TEST"
+              required
+              name="image"
+              type="text"
+              class="add-card-input"
+            />
+            <label class="add-card-label">Resource</label>
+            <input
+              value="TEST"
+              required
+              name="publisher"
+              type="text"
+              class="add-card-input"
+            />
             <label class="add-card-label">Prep time</label>
-            <input value="23" required name="cookingTime" type="number" class="add-card-input"/>
+            <input
+              value="23"
+              required
+              name="cookingTime"
+              type="number"
+              class="add-card-input"
+            />
             <label class="add-card-label">Servings</label>
-            <input value="23" required name="servings" type="number" class="add-card-input"/>
+            <input
+              value="23"
+              required
+              name="servings"
+              type="number"
+              class="add-card-input"
+            />
           </div>
 
-          <div class="w-[50%] pl-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem]  @5xl:items-center @8xl:gap-[2rem]">
-            <h3 class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]">Ingredients</h3>
+          <div
+            class="w-[50%] pl-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem] @5xl:items-center @8xl:gap-[2rem]"
+          >
+            <h3
+              class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]"
+            >
+              Ingredients
+            </h3>
             <label class="add-card-label">Ingredient 1</label>
             <input
               value="0.5,kg,Rice"
@@ -347,15 +399,15 @@
 
           <div class="w-[100%] flex justify-center pt-[2rem] @8xl:pt-[3rem]">
             <button
-              class="bg-blue-green-gradient text-white py-[0.6rem] w-[8rem] rounded-full flex items-center justify-center gap-[3px] @2xl:w-[8rem] @5xl:px-[1.5rem] @5xl:py-[1rem] @5xl:w-[11rem] @8xl:w-[14rem] @8xl:px-[2rem]  "
+              class="bg-blue-green-gradient text-white py-[0.6rem] w-[8rem] rounded-full flex items-center justify-center gap-[3px] @2xl:w-[8rem] @5xl:px-[1.5rem] @5xl:py-[1rem] @5xl:w-[11rem] @8xl:w-[14rem] @8xl:px-[2rem]"
             >
               <svg
-                class="w-[1.5rem] h-[1.5rem] fill-current  @5xl:w-[2rem] @5xl:h-[2rem]  @8xl:h-[2.5rem] @8xl:w-[2.5rem]"
+                class="w-[1.5rem] h-[1.5rem] fill-current @5xl:w-[2rem] @5xl:h-[2rem] @8xl:h-[2.5rem] @8xl:w-[2.5rem]"
               >
                 <use href="./src/img/icons.svg#icon-upload-cloud"></use>
               </svg>
               <span
-                class=" text-base font-bold @5xl:text-[14px] @8xl:text-[17px]"
+                class="text-base font-bold @5xl:text-[14px] @8xl:text-[17px]"
                 >UPLOAD</span
               >
             </button>
