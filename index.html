@@ -9,14 +9,17 @@
     <div
       class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-rows-[auto_1fr] grid-cols-[minmax(100px,1fr)_minmax(200px,2fr)] relative"
     >
+      <!--header-->
       <header
         class="w-full col-span-2 row-span-1 flex items-center justify-between px-[1rem] bg-grey-2 min-h-[6.5rem] gap-[0.5rem] @2xl:min-h-[8rem] @5xl:min-h-[9rem] @5xl:px-[2rem] @8xl:min-h-[10rem] relative"
       >
+        <!--logo-->
         <img
           src="./src/img/logo.png"
           alt="logo"
           class="h-auto w-auto max-w-[11rem] @2xl:max-w-[16rem] @5xl:max-w-[17rem] @8xl:max-w-[20rem]"
         />
+        <!--search bar-->
         <form
           class="w-[20rem] relative group translate-x-[-10px] @2xl:w-[29rem] @2xl:translate-x-[-20px] @5xl:w-[28rem] @8xl:w-[45rem]"
         >
@@ -26,7 +29,7 @@
             class="min-h-[3rem] w-full px-[1rem] bg-white border-white rounded-full text-xs outline-none focus:shadow-lg focus:translate-y-[-2px] @2xl:min-h-[3.5rem] @2xl:text-sm @5xl:min-h-[4.5rem] @5xl:text-[1rem] @8xl:min-h-[5rem] @8xl:text-2xl @8xl:px-[3rem]"
           />
           <button
-            class="bg-blue-green-gradient text-white h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center group-focus-within:translate-y-[-2px] @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[17rem] @8xl:px-[4rem]"
+            class="bg-blue-green-gradient text-white h-full w-[3.2rem] rounded-full absolute right-0 top-0 translate-x-[20%] flex items-center justify-center group-focus-within:translate-y-[-2px] @2xl:w-[5rem] @5xl:w-[8rem] @8xl:w-[17rem] @8xl:px-[4rem] hover:scale-105 duration-500 ease-in-out"
           >
             <svg
               class="w-[1.5rem] h-[1.5rem] fill-current @8xl:w-[2rem] @8xl:h-[2rem]"
@@ -39,12 +42,15 @@
             >
           </button>
         </form>
+
+        <!--nav-->
         <nav class="h-full flex items-center justify-center px-[2px]">
           <ul
             class="h-full flex flex-col justify-center gap-[4px] items-center @2xl:gap-0 @2xl:flex-row @2xl:justify-around"
           >
+            <!--add card-->
             <li
-              class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 @2xl:h-full @2xl:px-[5px]"
+              class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 duration-500 ease-in-out @2xl:h-full @2xl:px-[5px]"
             >
               <button class="text-light-blue flex items-center @2xl:gap-[3px]">
                 <svg
@@ -58,8 +64,9 @@
                 </span>
               </button>
             </li>
+            <!--bookmark-->
             <li
-              class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 @2xl:h-full @2xl:px-[5px]"
+              class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 duration-500 ease-in-out @2xl:h-full @2xl:px-[5px]"
             >
               <button class="text-light-blue flex items-center @2xl:gap-[3px]">
                 <svg
@@ -75,9 +82,21 @@
               <!--<div
                 class="absolute top-[100%] right-0 bg-white w-[14rem] @5xl:w-[20rem]"
               >
+                <div class="flex gap-[2px] justify-center items-start p-[2px] @5xl:px-[5px] @8xl:gap-[1rem]">
+                  <div class="">
+                    <svg
+                      class="w-[1rem] h-[1rem] text-light-blue fill-current @2xl:w-[2rem] @2xl:h-[2rem] "
+                    >
+                      <use href="./src/img/icons.svg#icon-alert-triangle"></use>
+                    </svg>
+                  </div>
+                  <p class="text-[10px] @5xl:text-[12px] @8xl:text-[15px]">
+                    No bookmarks found for your query. Please add one!
+                  </p>
+                </div>
                 <ul class="w-full flex flex-col items-start">
                   <li
-                    class="list-none px-[1rem] py-[0.75rem] @2xl:py-[1rem] @5xl:px-[1.3rem] @8xl:py-[1.3rem]"
+                    class="list-none px-[1rem] py-[0.75rem] @2xl:py-[1rem] @5xl:px-[1.3rem] @8xl:py-[1.3rem] hover:bg-grey-1/30 duration-500 ease-in-out"
                   >
                     <a
                       href="#"
@@ -110,12 +129,13 @@
           </ul>
         </nav>
       </header>
+      <!--side bar-->
       <div class="bg-white flex flex-col pt-[1rem]">
         <!--<svg class="animate-spin w-[2.5rem] h-[2.5rem] @2xl:w-[4.5rem] @2xl:h-[4.5rem]">
           <use href="./src/img/icons.svg#icon-loader"></use>
         </svg>-->
         <li
-          class="list-none px-[1rem] py-[0.75rem] @2xl:py-[1.5rem] @5xl:px-[2rem] @8xl:py-[2rem]"
+          class="list-none px-[1rem] py-[0.75rem] @2xl:py-[1.5rem] @5xl:px-[2rem] @8xl:py-[2rem] hover:bg-grey-1/30 hover:scale-105 duration-500 ease-in-out"
         >
           <a href="#" class="flex flex-row w-full h-full items-center">
             <figure class="flex-shrink-0">
@@ -146,13 +166,13 @@
         </li>
 
         <!--<div class="flex justify-between flex-wrap gap-[2px] p-[1rem] @5xl:p-[2rem] ">
-          <button class="flex items-center justify-center bg-turquoise px-[5px] py-[2px] rounded-full text-regal-blue font-bold @5xl:px-[1rem] @5xl:py-[5px] ">
+          <button class="flex items-center justify-center bg-turquoise px-[5px] py-[2px] rounded-full text-regal-blue font-bold @5xl:px-[1rem] @5xl:py-[5px] hover:scale-105 duration-500 ease-in-out">
             <span class=" text-sm @5xl:text-lg">page 1</span>
             <svg class="w-[1rem] h-[1rem] fill-current  @5xl:w-[1.5rem] @5xl:h-[1.5rem]">
               <use href="./src/img/icons.svg#icon-arrow-left"></use>
             </svg>
           </button>
-          <button class="flex items-center justify-center bg-turquoise px-[5px] py-[2px] rounded-full text-regal-blue font-bold @5xl:px-[1rem] @5xl:py-[5px]">
+          <button class="flex items-center justify-center bg-turquoise px-[5px] py-[2px] rounded-full text-regal-blue font-bold @5xl:px-[1rem] @5xl:py-[5px] hover:scale-105 duration-500 ease-in-out">
             <span class="text-sm @5xl:text-lg">page 3</span>
             <svg class="w-[1rem] h-[1rem] fill-current @5xl:w-[1.5rem] @5xl:h-[1.5rem]">
               <use href="./src/img/icons.svg#icon-arrow-right"></use>
@@ -160,6 +180,8 @@
           </button>
         </div>-->
       </div>
+
+      <!--information section-->
       <div class="bg-grey-2">
         <figure class="">
           <img
@@ -169,7 +191,7 @@
           />
           <h1 class="flex items-center justify-center">
             <span
-              class="text-white bg-blue-green-gradient px-[1rem] py-[0.5rem] font-bold text-[15px] skew-y-[-6deg] translate-y-[-50%] @2xl:text-[18px] @5xl:text-[21px] @8xl:text-[30px]"
+              class="text-white bg-blue-green-gradient px-[1rem] py-[0.5rem] font-bold text-[15px] skew-y-[-6deg] translate-y-[-50%] @2xl:text-[18px] @5xl:text-[21px] @8xl:text-[30px] hover:scale-105 duration-500 ease-in-out"
               >STEGOSAURUS</span
             >
           </h1>
@@ -213,7 +235,7 @@
             </div>-->
             <button>
               <svg
-                class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem]"
+                class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem] "
               >
                 <use href="./src/img/icons.svg#icon-bookmark"></use>
               </svg>
@@ -274,11 +296,12 @@
         </div>
       </div>
 
-      <div
+      <!--add card form-->
+      <!--<div
         class="absolute left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
       >
         <button
-          class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem]"
+          class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem] hover:scale-105 duration-500 ease-in-out" 
         >
           &times;
         </button>
@@ -399,7 +422,7 @@
 
           <div class="w-[100%] flex justify-center pt-[2rem] @8xl:pt-[3rem]">
             <button
-              class="bg-blue-green-gradient text-white py-[0.6rem] w-[8rem] rounded-full flex items-center justify-center gap-[3px] @2xl:w-[8rem] @5xl:px-[1.5rem] @5xl:py-[1rem] @5xl:w-[11rem] @8xl:w-[14rem] @8xl:px-[2rem]"
+              class="bg-blue-green-gradient text-white py-[0.6rem] w-[8rem] rounded-full flex items-center justify-center gap-[3px] @2xl:w-[8rem] @5xl:px-[1.5rem] @5xl:py-[1rem] @5xl:w-[11rem] @8xl:w-[14rem] @8xl:px-[2rem] hover:scale-105 duration-500 ease-in-out"
             >
               <svg
                 class="w-[1.5rem] h-[1.5rem] fill-current @5xl:w-[2rem] @5xl:h-[2rem] @8xl:h-[2.5rem] @8xl:w-[2.5rem]"
@@ -413,7 +436,7 @@
             </button>
           </div>
         </form>
-      </div>
+      </div>-->
     </div>
   </body>
 </html>
