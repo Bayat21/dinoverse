@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/styles.css" rel="stylesheet" />
+    <script type="module" src="./src/js/controller.js"></script>
+    <title>dinoverse</title>
   </head>
   <body class="bg-blue-green-gradient bg-cover bg-no-repeat">
     <div
@@ -235,7 +237,7 @@
             </div>-->
             <button>
               <svg
-                class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem] "
+                class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem]"
               >
                 <use href="./src/img/icons.svg#icon-bookmark"></use>
               </svg>
@@ -312,7 +314,7 @@
             <h3
               class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]"
             >
-              Recipe data
+              Card data
             </h3>
             <label class="add-card-label">Name</label>
             <input
@@ -322,11 +324,11 @@
               type="text"
               class="add-card-input"
             />
-            <label class="add-card-label">URL</label>
+            <label class="add-card-label">period</label>
             <input
               value="TEST"
               required
-              name="sourceUrl"
+              name="period"
               type="text"
               class="add-card-input"
             />
@@ -346,21 +348,20 @@
               type="text"
               class="add-card-input"
             />
-            <label class="add-card-label">Prep time</label>
+            <label class="add-card-label">social_behavior</label>
             <input
-              value="23"
+              value="text"
               required
-              name="cookingTime"
+              name="socialBehavior"
               type="number"
               class="add-card-input"
             />
-            <label class="add-card-label">Servings</label>
+            <label class="add-card-label">description</label>
             <input
-              value="23"
+              value="text"
               required
-              name="servings"
-              type="number"
-              class="add-card-input"
+              name="description"
+              type="text"
             />
           </div>
 
@@ -370,52 +371,52 @@
             <h3
               class="text-[13px] font-bold pb-[1rem] @5xl:col-span-2 @5xl:text-4xl @5xl:pb-[2rem]"
             >
-              Ingredients
+              characteristics
             </h3>
-            <label class="add-card-label">Ingredient 1</label>
+            <label class="add-card-label">charactistic 1</label>
             <input
-              value="0.5,kg,Rice"
+              value=""
               type="text"
               required
-              name="ingredient-1"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactistic-1"
+              placeholder="Format: ''"
               class="add-card-input"
             />
-            <label class="add-card-label">Ingredient 2</label>
+            <label class="add-card-label">charactistic 2</label>
             <input
-              value="1,,Avocado"
+              value=""
               type="text"
-              name="ingredient-2"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactisticcharactistic-2"
+              placeholder="Format: ''"
               class="add-card-input"
             />
-            <label class="add-card-label">Ingredient 3</label>
+            <label class="add-card-label">charactistic 3</label>
             <input
-              value=",,salt"
+              value=""
               type="text"
-              name="ingredient-3"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactisticcharactistic-3"
+              placeholder="Format: '"
               class="add-card-input"
             />
-            <label class="add-card-label">Ingredient 4</label>
+            <label class="add-card-label">charactistic 4</label>
             <input
               type="text"
-              name="ingredient-4"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactisticcharactistic-4"
+              placeholder="Format: ''"
               class="add-card-input"
             />
-            <label class="add-card-label">Ingredient 5</label>
+            <label class="add-card-label">charactistic 5</label>
             <input
               type="text"
-              name="ingredient-5"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactistic-5"charactistic
+              placeholder="Format: ''"
               class="add-card-input"
             />
-            <label class="add-card-label">Ingredient 6</label>
+            <label class="add-card-label">charactistic 6</label>
             <input
               type="text"
-              name="ingredient-6"
-              placeholder="Format: 'Quantity,Unit,Description'"
+              name="charactistic-6"
+              placeholder="Format: ''"
               class="add-card-input"
             />
           </div>
