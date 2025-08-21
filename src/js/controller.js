@@ -29,12 +29,13 @@ const renderSpinner = function (parentEl) {
 };
 
 const showflashcard = async function () {
-  let randomID = Math.floor(Math.random() * 11) + 1
+  let id = window.location.hash.slice(1)
+  if (!id) return
   try {
     //1) loading flashcard
     renderSpinner(flashcardContainer);
 
-    const res = await fetch(`http://localhost:5174/dinosaurs/${randomID}`);
+    const res = await fetch(`http://localhost:5174/dinosaurs/${id}`);
     const data = await res.json();
     let flashcard = data;
 
@@ -164,6 +165,8 @@ const showflashcard = async function () {
   }
 };
 
-showflashcard();
+["load", "hashchange"].forEach( e => {
+  window.addEventListener(e, showflashcard)
+})
 
-window.addEventListener("hashchange", showflashcard);
+
