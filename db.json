@@ -8,15 +8,15 @@
       "period": "Late Cretaceous",
       "social_behavior": "Likely Solitary",
       "characteristics": [
-        { "charactistic": "length", "value": "12m" },
-        { "charactistic": "height", "value": "4m" },
+        { "feature": "length", "value": "12m" },
+        { "feature": "height", "value": "4m" },
         {
-          "charactistic": "skin_type",
+          "feature": "skin_type",
           "value": "Scaly with possible feathers"
         },
-        { "charactistic": "weight", "value": "8000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Carnivore" }
+        { "feature": "weight", "value": "8000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Tyrannosaurus Rex was one of the largest land predators ever."
     },
@@ -28,29 +28,29 @@
       "period": "Late Cretaceous",
       "social_behavior": "Herding",
       "characteristics": [
-        { "charactistic": "length", "value": "9m" },
-        { "charactistic": "height", "value": "3m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "6000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "9m" },
+        { "feature": "height", "value": "3m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "6000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Triceratops is famous for its three horns and large frill."
     },
     {
       "id": 3,
       "publisher": "wikipedia",
-      "image_url": "https://en.wikipedia.org/wiki/Velociraptor#/media/File:Linheraptor_exquisitus.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Linheraptor_exquisitus.jpg/1920px-Linheraptor_exquisitus.jpg",
       "title": "Velociraptor",
       "period": "Late Cretaceous",
       "social_behavior": "Pack Hunter",
       "characteristics": [
-        { "charactistic": "length", "value": "2m" },
-        { "charactistic": "height", "value": "0.6m" },
-        { "charactistic": "skin_type", "value": "Feathered" },
-        { "charactistic": "weight", "value": "15kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Carnivore" }
+        { "feature": "length", "value": "2m" },
+        { "feature": "height", "value": "0.6m" },
+        { "feature": "skin_type", "value": "Feathered" },
+        { "feature": "weight", "value": "15kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Velociraptor was small but agile and intelligent."
     },
@@ -62,12 +62,12 @@
       "period": "Late Jurassic",
       "social_behavior": "Herding",
       "characteristics": [
-        { "charactistic": "length", "value": "25m" },
-        { "charactistic": "height", "value": "13m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "56000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "25m" },
+        { "feature": "height", "value": "13m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "56000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Brachiosaurus had long front legs and grazed on treetops."
     },
@@ -79,12 +79,12 @@
       "period": "Late Jurassic",
       "social_behavior": "Herding",
       "characteristics": [
-        { "charactistic": "length", "value": "9m" },
-        { "charactistic": "height", "value": "4m" },
-        { "charactistic": "skin_type", "value": "Scaly with plates" },
-        { "charactistic": "weight", "value": "5000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "9m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "skin_type", "value": "Scaly with plates" },
+        { "feature": "weight", "value": "5000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Stegosaurus is recognized for its plates and spiked tail."
     },
@@ -96,12 +96,12 @@
       "period": "Late Jurassic",
       "social_behavior": "Pack Hunter",
       "characteristics": [
-        { "charactistic": "length", "value": "12m" },
-        { "charactistic": "height", "value": "4m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "2000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Carnivore" }
+        { "feature": "length", "value": "12m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "2000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Allosaurus was a top predator before T. rex appeared."
     },
@@ -113,12 +113,12 @@
       "period": "Late Jurassic",
       "social_behavior": "Herding",
       "characteristics": [
-        { "charactistic": "length", "value": "27m" },
-        { "charactistic": "height", "value": "4m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "15000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "27m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "15000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Diplodocus had one of the longest tails of any dinosaur."
     },
@@ -130,12 +130,12 @@
       "period": "Late Cretaceous",
       "social_behavior": "Likely Solitary",
       "characteristics": [
-        { "charactistic": "length", "value": "8m" },
-        { "charactistic": "height", "value": "1.7m" },
-        { "charactistic": "skin_type", "value": "Armored Scaly" },
-        { "charactistic": "weight", "value": "8000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "8m" },
+        { "feature": "height", "value": "1.7m" },
+        { "feature": "skin_type", "value": "Armored Scaly" },
+        { "feature": "weight", "value": "8000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Ankylosaurus was heavily armored with a club-like tail."
     },
@@ -147,12 +147,12 @@
       "period": "Late Cretaceous",
       "social_behavior": "Colonial",
       "characteristics": [
-        { "charactistic": "length", "value": "7m wingspan" },
-        { "charactistic": "height", "value": "1.8m" },
-        { "charactistic": "skin_type", "value": "Leathery wings" },
-        { "charactistic": "weight", "value": "35kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Piscivore" }
+        { "feature": "length", "value": "7m wingspan" },
+        { "feature": "height", "value": "1.8m" },
+        { "feature": "skin_type", "value": "Leathery wings" },
+        { "feature": "weight", "value": "35kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Piscivore" }
       ],
       "description": "Pteranodon was a flying reptile, not technically a dinosaur."
     },
@@ -164,12 +164,12 @@
       "period": "Late Cretaceous",
       "social_behavior": "Likely Solitary",
       "characteristics": [
-        { "charactistic": "length", "value": "15m" },
-        { "charactistic": "height", "value": "6m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "10000kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Carnivore" }
+        { "feature": "length", "value": "15m" },
+        { "feature": "height", "value": "6m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "10000kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Spinosaurus is thought to have been semi-aquatic, hunting fish."
     },
@@ -181,12 +181,12 @@
       "period": "Late Cretaceous",
       "social_behavior": "Herding",
       "characteristics": [
-        { "charactistic": "length", "value": "10m" },
-        { "charactistic": "height", "value": "4m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "2500kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "10m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "2500kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Parasaurolophus is known for its long crest, which may have been used for sound communication."
     },
@@ -198,12 +198,12 @@
       "period": "Late Cretaceous",
       "social_behavior": "Possibly small groups",
       "characteristics": [
-        { "charactistic": "length", "value": "4.5m" },
-        { "charactistic": "height", "value": "1.5m" },
-        { "charactistic": "skin_type", "value": "Scaly" },
-        { "charactistic": "weight", "value": "450kg" },
-        { "charactistic": "reproduction", "value": "Egg-laying" },
-        { "charactistic": "diet", "value": "Herbivore" }
+        { "feature": "length", "value": "4.5m" },
+        { "feature": "height", "value": "1.5m" },
+        { "feature": "skin_type", "value": "Scaly" },
+        { "feature": "weight", "value": "450kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Herbivore" }
       ],
       "description": "Pachycephalosaurus is known for its thick, domed skull, likely used in head-butting contests."
     }
