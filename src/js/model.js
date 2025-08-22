@@ -1,4 +1,6 @@
-import { async } from "regenerator-runtime";
+import { API_URL } from "./config";
+import { getJSON } from "./helpers";
+
 
 export const state = {
   flashcard: {},
@@ -6,10 +8,9 @@ export const state = {
 
 export const loadFlashcard = async function (id) {
   try {
-    const res = await fetch(`http://localhost:5174/dinosaurs/${id}`);
-    const data = await res.json();
+    
+    const flashcard = await getJSON(`${API_URL}/${id}`);
 
-    let flashcard = data;
 
     state.flashcard = {
       id: flashcard.id,
