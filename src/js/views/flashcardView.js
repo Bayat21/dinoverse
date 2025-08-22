@@ -3,6 +3,8 @@ import icons from "url:../../img/icons.svg";
 class FlashcardView {
   #parentElement = document.querySelector(".flashcard");
   #data;
+  #errorMessage = "We could not find that flashcard. Please try another one!";
+  #successMessage = ""
 
   render(data) {
     this.#data = data;
@@ -25,7 +27,47 @@ class FlashcardView {
           </svg>
         </div>;`;
 
-    this.#parentElement.innerHTML = "";
+    this.#clear();
+    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+  }
+
+    renderMessage(message = this.#successMessage) {
+    const markup = `
+                <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
+                  <div >
+                    <svg
+                      class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
+                    >
+                      <use href="${icons}#icon-smile"></use>
+                    </svg>
+                  </div>
+                  <p class="text-[10px] @5xl:text-[12px] @8xl:text-[15px]">
+                    ${message}
+                  </p>
+                </div>
+    `;
+
+    this.#clear();
+    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+  }
+
+  renderError(message = this.#errorMessage) {
+    const markup = `
+                <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
+                  <div >
+                    <svg
+                      class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
+                    >
+                      <use href="${icons}#icon-alert-triangle"></use>
+                    </svg>
+                  </div>
+                  <p class="text-[10px] @5xl:text-[12px] @8xl:text-[15px]">
+                    ${message}
+                  </p>
+                </div>
+    `;
+
+    this.#clear();
     this.#parentElement.insertAdjacentHTML("afterbegin", markup);
   }
 

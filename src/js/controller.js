@@ -24,7 +24,7 @@ const controlFlashcard = async function () {
     //2) rendering flashcard
     flashcardView.render(model.state.flashcard);
   } catch (err) {
-    alert(err);
+    flashcardView.renderError()
   }
 };
 

@@ -24,6 +24,6 @@ export const loadFlashcard = async function (id) {
     };
 
   } catch (err) {
-    alert(err);
+    throw err
   }
 };
