@@ -28,6 +28,8 @@ const controlFlashcard = async function () {
   }
 };
 
-["load", "hashchange"].forEach((e) => {
-  window.addEventListener(e, controlFlashcard);
-});
+const init = function () {
+  flashcardView.addHandlerRender(controlFlashcard)
+}
+
+init()

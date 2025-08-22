@@ -29,6 +29,12 @@ class FlashcardView {
     this.#parentElement.insertAdjacentHTML("afterbegin", markup);
   }
 
+  addHandlerRender(handler) {
+    ["load", "hashchange"].forEach((e) => {
+      window.addEventListener(e, handler);
+    });
+  }
+
   #generateMarkup() {
     console.log(this.#data);
     return `
