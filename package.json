@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Bayat21/dinoverse#readme",
   "devDependencies": {
+    "buffer": "^6.0.3",
     "concurrently": "^9.2.0",
     "json-server": "^0.17.3",
     "parcel": "^2.15.4"

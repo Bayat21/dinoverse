@@ -1,13 +1,8 @@
 import * as model from "./model.js";
 import flashcardView from "./views/flashcardView.js";
-
-import icons from "url:../img/icons.svg";
+import searchView from "./views/searchView.js";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-
-const flashcardContainer = document.querySelector(".flashcard");
-
-
 
 //////////////////////
 
@@ -24,12 +19,24 @@ const controlFlashcard = async function () {
     //2) rendering flashcard
     flashcardView.render(model.state.flashcard);
   } catch (err) {
-    flashcardView.renderError()
+    flashcardView.renderError();
+  }
+};
+
+const controlSearchResults = async function () {
+  try {
+    const query = searchView.getQuery();
+    if (!query) return;
+    await model.loadSearchResults(query);
+    console.log(model.state.search.results);
+  } catch (err) {
+    console.log(err);
   }
 };
 
 const init = function () {
-  flashcardView.addHandlerRender(controlFlashcard)
-}
+  flashcardView.addHandlerRender(controlFlashcard);
+  searchView.addHandlerSearch(controlSearchResults);
+};
 
-init()
+init();
