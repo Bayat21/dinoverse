@@ -1,75 +1,10 @@
 import icons from "url:../../img/icons.svg";
+import View from "./View"
 
-class FlashcardView {
-  #parentElement = document.querySelector(".flashcard");
-  #data;
-  #errorMessage = "We could not find that flashcard. Please try another one!";
-  #successMessage = ""
-
-  render(data) {
-    this.#data = data;
-    const markup = this.#generateMarkup();
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
-  }
-
-  #clear() {
-    this.#parentElement.innerHTML = "";
-  }
-
-  renderSpinner() {
-    const markup = `
-        <div class="flex justify-center pt-[7rem]">
-          <svg
-            class="text-light-blue fill-current animate-spin w-[2.5rem] h-[2.5rem] @2xl:w-[4.5rem] @2xl:h-[4.5rem]"
-          >
-            <use href="${icons}#icon-loader"></use>
-          </svg>
-        </div>;`;
-
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
-  }
-
-    renderMessage(message = this.#successMessage) {
-    const markup = `
-                <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
-                  <div >
-                    <svg
-                      class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
-                    >
-                      <use href="${icons}#icon-smile"></use>
-                    </svg>
-                  </div>
-                  <p class="text-[10px] @5xl:text-[12px] @8xl:text-[15px]">
-                    ${message}
-                  </p>
-                </div>
-    `;
-
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
-  }
-
-  renderError(message = this.#errorMessage) {
-    const markup = `
-                <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
-                  <div >
-                    <svg
-                      class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
-                    >
-                      <use href="${icons}#icon-alert-triangle"></use>
-                    </svg>
-                  </div>
-                  <p class="text-[10px] @5xl:text-[12px] @8xl:text-[15px]">
-                    ${message}
-                  </p>
-                </div>
-    `;
-
-    this.#clear();
-    this.#parentElement.insertAdjacentHTML("afterbegin", markup);
-  }
+class FlashcardView extends View {
+  _parentElement = document.querySelector(".flashcard");
+  _errorMessage = "We could not find that flashcard. Please try another one!";
+  _successMessage = "";
 
   addHandlerRender(handler) {
     ["load", "hashchange"].forEach((e) => {
@@ -77,19 +12,19 @@ class FlashcardView {
     });
   }
 
-  #generateMarkup() {
-    console.log(this.#data);
+  _generateMarkup() {
+    console.log(this._data);
     return `
         <figure>
           <img
-            src="${this.#data.image}"
-            alt="${this.#data.title}"
+            src="${this._data.image}"
+            alt="${this._data.title}"
             class="w-full h-[15rem] object-cover @2xl:h-[17rem] @8xl:h-[37rem]"
           />
           <h1 class="flex items-center justify-center">
             <span
               class="text-white bg-blue-green-gradient px-[1rem] py-[0.5rem] font-bold text-[15px] skew-y-[-6deg] translate-y-[-50%] @2xl:text-[18px] @5xl:text-[21px] @8xl:text-[30px] hover:scale-105 duration-500 ease-in-out"
-              >${this.#data.title}</span
+              >${this._data.title}</span
             >
           </h1>
         </figure>
@@ -107,7 +42,7 @@ class FlashcardView {
               </svg>
               <span
                 class="text-xs @2xl:text-[10px] @5xl:text-[12px] @8xl:text-[16px]"
-                >${this.#data.period}</span
+                >${this._data.period}</span
               >
             </div>
             <div class="flex gap-[3px] items-center">
@@ -118,7 +53,7 @@ class FlashcardView {
               </svg>
               <span
                 class="text-xs @2xl:text-[10px] @5xl:text-[12px] @8xl:text-[16px]"
-                >${this.#data.socialBehavior}</span
+                >${this._data.socialBehavior}</span
               >
             </div>
           </div>
@@ -148,8 +83,8 @@ class FlashcardView {
             SPECIFICATIONS
           </h2>
           <ul class="w-full grid grid-cols-2 gap-[1rem]">
-          ${this.#data.characteristics
-            .map(this.#generatedMarkupCharacteristics)
+          ${this._data.characteristics
+            .map(this._generatedMarkupCharacteristics)
             .join("")}
 
           </ul>
@@ -164,13 +99,13 @@ class FlashcardView {
             DESCRIPTION
           </h2>
           <p class="text-sm @2xl:text-[10px] @5xl:text-[12px] @8xl:text-[16px]">
-            ${this.#data.description}
+            ${this._data.description}
           </p>
         </div>
     `;
   }
 
-  #generatedMarkupCharacteristics(chr) {
+  _generatedMarkupCharacteristics(chr) {
     return `
             <li class="flex gap-[2px] justify-start">
               <svg
