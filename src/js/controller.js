@@ -2,6 +2,7 @@ import * as model from "./model.js";
 import flashcardView from "./views/flashcardView.js";
 import resultsView from "./views/resultsView.js";
 import searchView from "./views/searchView.js";
+import paginationView from "./views/paginationView.js";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
@@ -38,14 +39,22 @@ const controlSearchResults = async function () {
 
     //2) rendering results
     resultsView.render(model.getSearchResultsPage(1));
+
+    paginationView.render(model.state.search);
   } catch (err) {
     console.log(err);
   }
 };
 
+const controlPagination = function(goToPage) {
+  resultsView.render(model.getSearchResultsPage(goToPage))
+  paginationView.render(model.state.search);
+}
+
 const init = function () {
   flashcardView.addHandlerRender(controlFlashcard);
   searchView.addHandlerSearch(controlSearchResults);
+  paginationView.addhandlerClick(controlPagination)
 };
 
 init();
