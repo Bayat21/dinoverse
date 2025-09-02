@@ -17,6 +17,8 @@ const controlFlashcard = async function () {
     const id = window.location.hash.slice(1);
     if (!id) return;
     flashcardView.renderSpinner();
+
+    resultsView.update(model.getSearchResultsPage())
     //1) loading flashcard
 
     await model.loadFlashcard(id);

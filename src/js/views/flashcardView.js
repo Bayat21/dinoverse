@@ -13,7 +13,6 @@ class FlashcardView extends View {
   }
 
   _generateMarkup() {
-    console.log(this._data);
     return `
         <figure>
           <img

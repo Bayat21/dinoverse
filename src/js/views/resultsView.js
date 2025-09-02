@@ -6,15 +6,15 @@ class ResultsView extends View {
   _successMessage = "";
 
   _generateMarkup() {
-    console.log(this._data);
     return this._data.map(this._generateMarkupPreview).join("");
   }
 
   _generateMarkupPreview(result) {
+    const id = window.location.hash.slice(1)
     return `
       
           <li
-            class="list-none  hover:bg-grey-1/30 hover:scale-105 duration-500 ease-in-out"
+            class=" ${String(result.id) == id ? "bg-grey-1/30" : ""}  list-none  hover:bg-grey-1/30 hover:scale-105 duration-500 ease-in-out"
           >
             <a href="#${result.id}" class="flex flex-row w-full h-full items-center px-[1rem] py-[0.75rem] @2xl:py-[1.5rem] @5xl:px-[2rem] @8xl:py-[2rem]">
               <figure class="flex-shrink-0">
