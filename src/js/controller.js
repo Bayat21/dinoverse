@@ -20,6 +20,8 @@ const controlFlashcard = async function () {
     flashcardView.renderSpinner();
 
     resultsView.update(model.getSearchResultsPage());
+    bookmarksView.update(model.state.bookmarks)
+
 
     //1) loading flashcard
 
