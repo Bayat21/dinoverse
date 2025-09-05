@@ -58,6 +58,7 @@ export const loadSearchResults = async function (query) {
   }
 };
 
+
 export const getSearchResultsPage = function (page = state.search.page) {
   state.search.page = page;
   const start = (page - 1) * state.search.resultsPerPage;
@@ -65,13 +66,29 @@ export const getSearchResultsPage = function (page = state.search.page) {
   return state.search.results.slice(start, end);
 };
 
+const persistBookmarks = function() {
+  localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks))
+}
+
+
 export const addBookmark = function (flashcard) {
   state.bookmarks.push(flashcard);
   if ((flashcard.id === state.flashcard.id))  state.flashcard.bookmarked = true;
+
+  persistBookmarks()
 };
 
 export const deleteBookmark = function (id) {
   const index = state.bookmarks.findIndex((el) => el.id === id);
   state.bookmarks.splice(index, 1);
   if (id === state.flashcard.id) state.flashcard.bookmarked = false;
+
+  persistBookmarks()
 };
+
+const init = function() {
+  const storage = localStorage.getItem("bookmarks")
+  if(storage) state.bookmarks = JSON.parse(storage)
+}
+
+init()

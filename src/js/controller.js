@@ -20,8 +20,7 @@ const controlFlashcard = async function () {
     flashcardView.renderSpinner();
 
     resultsView.update(model.getSearchResultsPage());
-    bookmarksView.update(model.state.bookmarks)
-
+    bookmarksView.update(model.state.bookmarks);
 
     //1) loading flashcard
 
@@ -66,10 +65,15 @@ const controlAddBookmark = function () {
 
   flashcardView.update(model.state.flashcard);
 
-  bookmarksView.render(model.state.bookmarks)
+  bookmarksView.render(model.state.bookmarks);
+};
+
+const controlBookmarks = function () {
+  bookmarksView.render(model.state.bookmarks);
 };
 
 const init = function () {
+  bookmarksView.addHandlerRender(controlBookmarks);
   flashcardView.addHandlerRender(controlFlashcard);
   flashcardView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
