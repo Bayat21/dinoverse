@@ -76,7 +76,7 @@ export default class View {
 
   renderError(message = this._errorMessage) {
     const markup = `
-                  <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
+                  <div class="flex gap-[2px] justify-center items-start px-[3px] py-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
                     <div >
                       <svg
                         class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
