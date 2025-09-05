@@ -3,13 +3,16 @@ import icons from "url:../../img/icons.svg";
 export default class View {
   _data;
 
-  render(data) {
+  render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0)) {
       return this.renderError();
     }
 
     this._data = data;
     const markup = this._generateMarkup();
+
+    if (!render) return this._generateMarkup();
+
     this._clear();
     this._parentElement.insertAdjacentHTML("afterbegin", markup);
   }
@@ -18,20 +21,19 @@ export default class View {
     this._data = data;
     const newMarkup = this._generateMarkup();
 
-    const newDOM = document.createRange().createContextualFragment(newMarkup)
-    const newElements = Array.from(newDOM.querySelectorAll("*"))
-    const curElements = Array.from(this._parentElement.querySelectorAll("*"))
-
+    const newDOM = document.createRange().createContextualFragment(newMarkup);
+    const newElements = Array.from(newDOM.querySelectorAll("*"));
+    const curElements = Array.from(this._parentElement.querySelectorAll("*"));
 
     newElements.forEach((newEl, i) => {
-      const curEl = curElements[i]
+      const curEl = curElements[i];
 
-      if(!newEl.isEqualNode(curEl)) {
-        Array.from(newEl.attributes).forEach(attr => {
-          curEl.setAttribute(attr.name, attr.value)
-        })
+      if (!newEl.isEqualNode(curEl)) {
+        Array.from(newEl.attributes).forEach((attr) => {
+          curEl.setAttribute(attr.name, attr.value);
+        });
       }
-    })
+    });
   }
 
   _clear() {
@@ -54,7 +56,7 @@ export default class View {
 
   renderMessage(message = this._successMessage) {
     const markup = `
-                  <div class="flex gap-[2px] justify-center items-start p-[2px] pt-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
+                  <div class="flex gap-[2px] justify-center items-start px-[3px] py-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]">
                     <div >
                       <svg
                         class="w-[1.3rem] h-[1.3rem] text-light-blue fill-current @5xl:w-[2rem] @5xl:h-[2rem] "
