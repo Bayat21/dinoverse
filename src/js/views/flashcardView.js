@@ -1,5 +1,5 @@
 import icons from "url:../../img/icons.svg";
-import View from "./View"
+import View from "./View";
 
 class FlashcardView extends View {
   _parentElement = document.querySelector(".flashcard");
@@ -9,6 +9,14 @@ class FlashcardView extends View {
   addHandlerRender(handler) {
     ["load", "hashchange"].forEach((e) => {
       window.addEventListener(e, handler);
+    });
+  }
+
+  addHandlerAddBookmark(handler) {
+    this._parentElement.addEventListener("click", function (e) {
+      const btn = e.target.closest(".btn_bookmark");
+      if (!btn) return;
+      handler();
     });
   }
 
@@ -64,11 +72,13 @@ class FlashcardView extends View {
                 <use href="${icons}#icon-user"></use>
               </svg>
             </div>-->
-            <button>
+            <button class="btn_bookmark">
               <svg
                 class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem]"
               >
-                <use href="${icons}#icon-bookmark"></use>
+                <use href="${icons}#icon-bookmark${
+      this._data.bookmarked ? "-fill" : ""
+    }"></use>
               </svg>
             </button>
           </div>

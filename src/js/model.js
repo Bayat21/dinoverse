@@ -9,8 +9,9 @@ export const state = {
     results: [],
     query: "",
     page: 1,
-    resultsPerPage: RES_PER_PAGE
+    resultsPerPage: RES_PER_PAGE,
   },
+  bookmarks: [],
 };
 
 export const loadFlashcard = async function (id) {
@@ -27,6 +28,10 @@ export const loadFlashcard = async function (id) {
       characteristics: flashcard.characteristics,
       description: flashcard.description,
     };
+
+    if (state.bookmarks.some((bookmark) => String(bookmark.id) === id)) 
+      state.flashcard.bookmarked = true;
+    else state.flashcard.bookmarked = false;
   } catch (err) {
     throw err;
   }
@@ -34,8 +39,7 @@ export const loadFlashcard = async function (id) {
 
 export const loadSearchResults = async function (query) {
   try {
-
-    state.search.query = query
+    state.search.query = query;
 
     const data = await getJSON(
       `${API_URL}?q=${query}&_select=id&_select=title&_select=image_url&_select=publisher`
@@ -48,17 +52,26 @@ export const loadSearchResults = async function (query) {
         publisher: res.publisher,
       };
     });
-
   } catch (err) {
     console.log(err);
     throw err;
   }
 };
 
-export const getSearchResultsPage = function(page = state.search.page) {
-  state.search.page = page
+export const getSearchResultsPage = function (page = state.search.page) {
+  state.search.page = page;
   const start = (page - 1) * state.search.resultsPerPage;
-  const end = page * state.search.resultsPerPage
-  return state.search.results.slice(start, end)
-}
+  const end = page * state.search.resultsPerPage;
+  return state.search.results.slice(start, end);
+};
 
+export const addBookmark = function (flashcard) {
+  state.bookmarks.push(flashcard);
+  if ((flashcard.id === state.flashcard.id))  state.flashcard.bookmarked = true;
+};
+
+export const deleteBookmark = function (id) {
+  const index = state.bookmarks.findIndex((el) => el.id === id);
+  state.bookmarks.splice(index, 1);
+  if (id === state.flashcard.id) state.flashcard.bookmarked = false;
+};

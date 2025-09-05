@@ -28,6 +28,7 @@ const controlFlashcard = async function () {
   } catch (err) {
     flashcardView.renderError();
   }
+
 };
 
 const controlSearchResults = async function () {
@@ -53,10 +54,24 @@ const controlPagination = function(goToPage) {
   paginationView.render(model.state.search);
 }
 
+const controlAddBookmark = function() {
+  if(!model.state.flashcard.bookmarked) {
+  model.addBookmark(model.state.flashcard)
+  flashcardView.update(model.state.flashcard)
+  }
+  else {
+    model.deleteBookmark(model.state.flashcard.id)
+    flashcardView.update(model.state.flashcard)
+  }
+
+}
+
 const init = function () {
   flashcardView.addHandlerRender(controlFlashcard);
+  flashcardView.addHandlerAddBookmark(controlAddBookmark)
   searchView.addHandlerSearch(controlSearchResults);
-  paginationView.addhandlerClick(controlPagination)
+  paginationView.addhandlerClick(controlPagination);
+
 };
 
 init();
