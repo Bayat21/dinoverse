@@ -3,6 +3,7 @@ import flashcardView from "./views/flashcardView.js";
 import resultsView from "./views/resultsView.js";
 import searchView from "./views/searchView.js";
 import paginationView from "./views/paginationView.js";
+import bookmarksView from "./views/bookmarksView.js";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
@@ -18,7 +19,8 @@ const controlFlashcard = async function () {
     if (!id) return;
     flashcardView.renderSpinner();
 
-    resultsView.update(model.getSearchResultsPage())
+    resultsView.update(model.getSearchResultsPage());
+
     //1) loading flashcard
 
     await model.loadFlashcard(id);
@@ -28,7 +30,6 @@ const controlFlashcard = async function () {
   } catch (err) {
     flashcardView.renderError();
   }
-
 };
 
 const controlSearchResults = async function () {
@@ -49,29 +50,28 @@ const controlSearchResults = async function () {
   }
 };
 
-const controlPagination = function(goToPage) {
-  resultsView.render(model.getSearchResultsPage(goToPage))
+const controlPagination = function (goToPage) {
+  resultsView.render(model.getSearchResultsPage(goToPage));
   paginationView.render(model.state.search);
-}
+};
 
-const controlAddBookmark = function() {
-  if(!model.state.flashcard.bookmarked) {
-  model.addBookmark(model.state.flashcard)
-  flashcardView.update(model.state.flashcard)
-  }
-  else {
-    model.deleteBookmark(model.state.flashcard.id)
-    flashcardView.update(model.state.flashcard)
+const controlAddBookmark = function () {
+  if (!model.state.flashcard.bookmarked) {
+    model.addBookmark(model.state.flashcard);
+  } else {
+    model.deleteBookmark(model.state.flashcard.id);
   }
 
-}
+  flashcardView.update(model.state.flashcard);
+
+  bookmarksView.render(model.state.bookmarks)
+};
 
 const init = function () {
   flashcardView.addHandlerRender(controlFlashcard);
-  flashcardView.addHandlerAddBookmark(controlAddBookmark)
+  flashcardView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addhandlerClick(controlPagination);
-
 };
 
 init();
