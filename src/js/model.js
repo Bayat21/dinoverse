@@ -1,6 +1,6 @@
 import { Result } from "postcss";
 import { API_URL } from "./config";
-import { getJSON, sendJSON } from "./helpers";
+import { AJAX } from "./helpers";
 import { RES_PER_PAGE } from "./config";
 
 export const state = {
@@ -24,13 +24,13 @@ const createFlashcardObject = function (flashcard) {
     socialBehavior: flashcard.social_behavior,
     characteristics: flashcard.characteristics,
     description: flashcard.description,
-    ...(flashcard.key && { key: flashcard.key })
+    ...(flashcard.key && { key: flashcard.key }),
   };
 };
 
 export const loadFlashcard = async function (id) {
   try {
-    const flashcard = await getJSON(`${API_URL}/${id}`);
+    const flashcard = await AJAX(`${API_URL}/${id}`);
 
     state.flashcard = createFlashcardObject(flashcard);
 
@@ -46,7 +46,7 @@ export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
 
-    const data = await getJSON(
+    const data = await AJAX(
       `${API_URL}?q=${query}&_select=id&_select=title&_select=image_url&_select=publisher`
     );
     state.search.results = data.map((res) => {
@@ -55,7 +55,7 @@ export const loadSearchResults = async function (query) {
         title: res.title,
         image: res.image_url,
         publisher: res.publisher,
-        ...(res.key && { key: res.key })
+        ...(res.key && { key: res.key }),
       };
     });
   } catch (err) {
@@ -123,10 +123,10 @@ export const uploadFlashcard = async function (newFlashcard) {
       social_behavior: newFlashcard.socialBehavior,
       characteristics,
       description: newFlashcard.description,
-      key: "user-flashcard"
+      key: "user-flashcard",
     };
 
-    const data = await sendJSON(API_URL, flashcard);
+    const data = await AJAX(API_URL, flashcard);
     state.flashcard = createFlashcardObject(data);
     addBookmark(state.flashcard);
   } catch (err) {
