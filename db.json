@@ -26,7 +26,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -61,7 +61,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -96,7 +96,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -131,7 +131,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -166,7 +166,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -201,7 +201,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -236,7 +236,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -247,8 +247,8 @@
     },
     {
       "id": 8,
-      "publisher": "wikipedia",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Ankylosaurus_magniventris_by_sphenaphinae.png/500px-Ankylosaurus_magniventris_by_sphenaphinae.png",
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Ankylosaur_head_-_cast_-_Custer_County_Montana_-_Museum_of_the_Rockies_-_2013-07-08.jpg/1280px-Ankylosaur_head_-_cast_-_Custer_County_Montana_-_Museum_of_the_Rockies_-_2013-07-08.jpg",
       "title": "Ankylosaurus",
       "period": "Late Cretaceous",
       "social_behavior": "Likely Solitary",
@@ -271,7 +271,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -306,7 +306,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -317,7 +317,7 @@
     },
     {
       "id": 10,
-      "publisher": "wikipedia",
+      "publisher": "nature.com",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Four_spinosaurids_by_Abelov2014.jpg/1920px-Four_spinosaurids_by_Abelov2014.jpg",
       "title": "Spinosaurus",
       "period": "Late Cretaceous",
@@ -341,7 +341,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -376,7 +376,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -411,7 +411,7 @@
         },
         {
           "feature": "reproduction",
-          "value": "Egg-laying"
+          "value": "Egg laying"
         },
         {
           "feature": "diet",
@@ -431,11 +431,11 @@
         { "feature": "length", "value": "1m" },
         { "feature": "height", "value": "0.3m" },
         {
-          "feature": "body_type",
+          "feature": "body type",
           "value": "Segmented with large frontal appendages"
         },
         { "feature": "weight", "value": "Unknown" },
-        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "reproduction", "value": "Egg laying" },
         { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Anomalocaris was one of the largest Cambrian predators, using its frontal appendages to catch prey."
@@ -449,7 +449,7 @@
       "social_behavior": "Unknown",
       "characteristics": [
         { "feature": "length", "value": "0.03m" },
-        { "feature": "body_type", "value": "Soft-bodied with spines" },
+        { "feature": "body type", "value": "Soft-bodied with spines" },
         { "feature": "diet", "value": "Likely detritivore" }
       ],
       "description": "Hallucigenia is a tiny, strange-looking Cambrian creature known for its spines and multiple pairs of legs."
@@ -464,7 +464,7 @@
       "characteristics": [
         { "feature": "length", "value": "18m" },
         { "feature": "height", "value": "5m" },
-        { "feature": "body_type", "value": "Shark" },
+        { "feature": "body type", "value": "Shark" },
         { "feature": "weight", "value": "60000kg" },
         { "feature": "reproduction", "value": "Live-bearing" },
         { "feature": "diet", "value": "Carnivore" }
@@ -481,7 +481,7 @@
       "characteristics": [
         { "feature": "length", "value": "2m" },
         { "feature": "height", "value": "0.5m" },
-        { "feature": "body_type", "value": "Lobed-finned fish" },
+        { "feature": "body type", "value": "Lobed-finned fish" },
         { "feature": "weight", "value": "90kg" },
         { "feature": "reproduction", "value": "Live-bearing" },
         { "feature": "diet", "value": "Carnivore" }
@@ -515,9 +515,9 @@
       "characteristics": [
         { "feature": "length", "value": "1m wingspan" },
         { "feature": "height", "value": "0.3m" },
-        { "feature": "body_type", "value": "Flying reptile" },
+        { "feature": "body type", "value": "Flying reptile" },
         { "feature": "weight", "value": "2kg" },
-        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "reproduction", "value": "Egg laying" },
         { "feature": "diet", "value": "Carnivore" }
       ],
       "description": "Pterodactylus was an early pterosaur with a light frame suitable for flight."
@@ -532,7 +532,7 @@
       "characteristics": [
         { "feature": "length", "value": "10m" },
         { "feature": "height", "value": "2m" },
-        { "feature": "body_type", "value": "Armored fish" },
+        { "feature": "body type", "value": "Armored fish" },
         { "feature": "weight", "value": "4000kg" },
         { "feature": "reproduction", "value": "Unknown" },
         { "feature": "diet", "value": "Carnivore" }
@@ -549,12 +549,350 @@
       "characteristics": [
         { "feature": "length", "value": "0.5m" },
         { "feature": "height", "value": "0.2m" },
-        { "feature": "body_type", "value": "Feathered reptile" },
+        { "feature": "body type", "value": "Feathered reptile" },
         { "feature": "weight", "value": "0.5kg" },
-        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "reproduction", "value": "Egg laying" },
         { "feature": "diet", "value": "Carnivore/Insectivore" }
       ],
       "description": "Archaeopteryx is considered a transitional species between dinosaurs and birds."
+    },
+    {
+      "id": 21,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Opabinia_v2.png/500px-Opabinia_v2.png",
+      "title": "Opabinia",
+      "period": "Cambrian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "0.07m" },
+        {
+          "feature": "body type",
+          "value": "Soft-bodied with proboscis and 5 eyes"
+        },
+        { "feature": "diet", "value": "Carnivore/Scavenger" }
+      ],
+      "description": "Opabinia is famous for its unusual body with a long proboscis and five eyes, a unique Cambrian predator."
+    },
+    {
+      "id": 22,
+      "publisher": "palaeos.org",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tiktaalik_model_at_the_Harvard_Museum_of_Natural_History.jpg/1920px-Tiktaalik_model_at_the_Harvard_Museum_of_Natural_History.jpg",
+      "title": "Tiktaalik",
+      "period": "Late Devonian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "2.5m" },
+        { "feature": "body type", "value": "Fish-like with limb-like fins" },
+        { "feature": "weight", "value": "200kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Tiktaalik is a transitional species between fish and tetrapods, showing early limb development."
+    },
+    {
+      "id": 23,
+      "publisher": "smithsonianmag",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Skeleton_of_Ichthyostega.JPG/1920px-Skeleton_of_Ichthyostega.JPG",
+      "title": "Ichthyostega",
+      "period": "Late Devonian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "1.5m" },
+        { "feature": "body type", "value": "Early amphibian" },
+        { "feature": "weight", "value": "50kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Ichthyostega was one of the first vertebrates to walk on land while retaining aquatic adaptations."
+    },
+    {
+      "id": 24,
+      "publisher": "nature.com",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Dimetrodon_grandis_3D_Model_Reconstruction.png",
+      "title": "Dimetrodon",
+      "period": "Early Permian",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "4m" },
+        { "feature": "height", "value": "1.2m" },
+        { "feature": "body type", "value": "Sail-backed synapsid" },
+        { "feature": "weight", "value": "250kg" },
+        { "feature": "reproduction", "value": "Egg laying" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Dimetrodon is often mistaken for a dinosaur but is actually a synapsid, known for its sail."
+    },
+    {
+      "id": 25,
+      "publisher": "nationalgeographic",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mosasaurus_hoffmanni_life.jpg/2560px-Mosasaurus_hoffmanni_life.jpg",
+      "title": "Mosasaurus",
+      "period": "Late Cretaceous",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "17m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "body type", "value": "Marine reptile" },
+        { "feature": "weight", "value": "15000kg" },
+        { "feature": "reproduction", "value": "Egg laying (ovoviviparous)" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Mosasaurus was a massive marine predator dominating Cretaceous oceans."
+    },
+    {
+      "id": 26,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Felis_pardalis_-_1834_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-%28White_Background%29.jpg",
+      "title": "Smilodon",
+      "period": "Pleistocene",
+      "social_behavior": "Hunting in pairs or small groups",
+      "characteristics": [
+        { "feature": "length", "value": "2.2m" },
+        { "feature": "height", "value": "1.2m" },
+        { "feature": "body type", "value": "Large saber-toothed cat" },
+        { "feature": "weight", "value": "400kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Smilodon, also known as the saber-toothed cat, hunted large herbivores during the Ice Age."
+    },
+    {
+      "id": 27,
+      "publisher": "smithsonianmag",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Varanus_priscus_Melbourne_Museum.jpg",
+      "title": "Megalania",
+      "period": "Pleistocene",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "7m" },
+        { "feature": "height", "value": "1.5m" },
+        { "feature": "body type", "value": "Giant monitor lizard" },
+        { "feature": "weight", "value": "600kg" },
+        { "feature": "reproduction", "value": "Egg laying" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Megalania was the largest terrestrial lizard in Australia, preying on megafauna."
+    },
+    {
+      "id": 28,
+      "publisher": "palaeos.org",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Arthropleura_Reconstruction.jpg/1920px-Arthropleura_Reconstruction.jpg",
+      "title": "Arthropleura",
+      "period": "Carboniferous",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "2.5m" },
+        { "feature": "body type", "value": "Giant millipede-like arthropod" },
+        { "feature": "weight", "value": "Unknown" },
+        { "feature": "diet", "value": "Herbivore/Detritivore" }
+      ],
+      "description": "Arthropleura was a giant arthropod that could grow over 2 meters long during the Carboniferous."
+    },
+    {
+      "id": 29,
+      "publisher": "nature.com",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Basilosaurus_isis_fossil%2C_Nantes_History_Museum_03.jpg/1920px-Basilosaurus_isis_fossil%2C_Nantes_History_Museum_03.jpg",
+      "title": "Basilosaurus",
+      "period": "Late Eocene",
+      "social_behavior": "Likely solitary or small pods",
+      "characteristics": [
+        { "feature": "length", "value": "18m" },
+        { "feature": "height", "value": "3m" },
+        { "feature": "body type", "value": "Early whale" },
+        { "feature": "weight", "value": "20000kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Basilosaurus was a giant early whale with elongated body and powerful jaws."
+    },
+    {
+      "id": 30,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Beelzebufo_UMMNH.jpg",
+      "title": "Beelzebufo",
+      "period": "Late Cretaceous",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "0.4m" },
+        { "feature": "height", "value": "0.2m" },
+        { "feature": "body type", "value": "Giant frog" },
+        { "feature": "weight", "value": "4kg" },
+        { "feature": "reproduction", "value": "Egg laying" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Beelzebufo, also called the 'devil frog,' was a large predatory amphibian from Madagascar."
+    },
+    {
+      "id": 31,
+      "publisher": "smithsonianmag",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Diplocaulus_-_skeleton_and_model.jpg",
+      "title": "Diplocaulus",
+      "period": "Late Carboniferous-Early Permian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "1m" },
+        { "feature": "body type", "value": "Boomerang-headed amphibian" },
+        { "feature": "weight", "value": "10kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Diplocaulus had a distinctive boomerang-shaped head, likely used for defense or swimming."
+    },
+    {
+      "id": 32,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Deinotherium_bozasi_JG.png",
+      "title": "Deinotherium",
+      "period": "Miocene-Pleistocene",
+      "social_behavior": "Herding",
+      "characteristics": [
+        { "feature": "length", "value": "4m" },
+        { "feature": "height", "value": "3.5m" },
+        { "feature": "body type", "value": "Elephant-like mammal" },
+        { "feature": "weight", "value": "10000kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Herbivore" }
+      ],
+      "description": "Deinotherium was a massive prehistoric relative of elephants with downward-curving tusks."
+    },
+    {
+      "id": 33,
+      "publisher": "palaeos.org",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Inostrancevia_4DB.jpg/1280px-Inostrancevia_4DB.jpg",
+      "title": "Gorgonops",
+      "period": "Late Permian",
+      "social_behavior": "Likely solitary predator",
+      "characteristics": [
+        { "feature": "length", "value": "3m" },
+        { "feature": "body type", "value": "Therapsid" },
+        { "feature": "weight", "value": "200kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Gorgonops was a top predator before the rise of dinosaurs, known for its saber-like teeth."
+    },
+    {
+      "id": 34,
+      "publisher": "nationalgeographic",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Plateosaurus_engelhardti.JPG/1280px-Plateosaurus_engelhardti.JPG",
+      "title": "Plateosaurus",
+      "period": "Late Triassic",
+      "social_behavior": "Herding",
+      "characteristics": [
+        { "feature": "length", "value": "10m" },
+        { "feature": "height", "value": "4m" },
+        { "feature": "body type", "value": "Early sauropodomorph" },
+        { "feature": "weight", "value": "4000kg" },
+        { "feature": "reproduction", "value": "Egg laying" },
+        { "feature": "diet", "value": "Herbivore" }
+      ],
+      "description": "Plateosaurus was one of the earliest large herbivorous dinosaurs, moving in small herds."
+    },
+    {
+      "id": 35,
+      "publisher": "nature.com",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Eryops1DB.jpg/1280px-Eryops1DB.jpg",
+      "title": "Eryops",
+      "period": "Permian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "2m" },
+        { "feature": "body type", "value": "Large amphibian" },
+        { "feature": "weight", "value": "90kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Eryops was a large, semi-aquatic amphibian with strong limbs for walking on land."
+    },
+    {
+      "id": 36,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Plesiosaurus_3DB.jpg/1280px-Plesiosaurus_3DB.jpg",
+      "title": "Plesiosaurus",
+      "period": "Early Jurassic",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "4m" },
+        { "feature": "body type", "value": "Marine reptile with long neck" },
+        { "feature": "weight", "value": "300kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Plesiosaurus was a marine predator with a long neck, hunting fish in Jurassic seas."
+    },
+    {
+      "id": 37,
+      "publisher": "smithsonianmag",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Meganeura.png/1280px-Meganeura.png",
+      "title": "Giant Meganeura",
+      "period": "Carboniferous",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "wingspan", "value": "0.7m" },
+        { "feature": "body type", "value": "Giant dragonfly-like insect" },
+        { "feature": "weight", "value": "0.05kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Meganeura was a massive flying insect, one of the largest known insects in history."
+    },
+    {
+      "id": 38,
+      "publisher": "nationalgeographic",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Marsupial_lion_%28Thylacoleo_carnifex%29.png/1280px-Marsupial_lion_%28Thylacoleo_carnifex%29.png",
+      "title": "Thylacoleo",
+      "period": "Pleistocene",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "1.5m" },
+        { "feature": "body type", "value": "Marsupial lion" },
+        { "feature": "weight", "value": "130kg" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Thylacoleo, the marsupial lion, was a powerful predator in ancient Australia."
+    },
+    {
+      "id": 39,
+      "publisher": "palaeos.org",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Milwaukee_Public_Museum_May_2023_07_%28Third_Planet--Seymouria%29.jpg/1280px-Milwaukee_Public_Museum_May_2023_07_%28Third_Planet--Seymouria%29.jpg",
+      "title": "Seymouria",
+      "period": "Permian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "0.6m" },
+        { "feature": "body type", "value": "Early tetrapod" },
+        { "feature": "weight", "value": "10kg" },
+        { "feature": "diet", "value": "Carnivore/Insectivore" }
+      ],
+      "description": "Seymouria was an amphibian-like reptile, bridging the gap between amphibians and early reptiles."
+    },
+    {
+      "id": 40,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Nanshiungosaurus_Restoration.png/1280px-Nanshiungosaurus_Restoration.png",
+      "title": "Therizinosaurus",
+      "period": "Late Cretaceous",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "10m" },
+        { "feature": "height", "value": "4m" },
+        {
+          "feature": "body type",
+          "value": "Feathered theropod with large claws"
+        },
+        { "feature": "weight", "value": "5000kg" },
+        { "feature": "reproduction", "value": "Egg laying" },
+        { "feature": "diet", "value": "Herbivore" }
+      ],
+      "description": "Therizinosaurus had enormous claws and a strange body, likely using them to gather plants."
+    },
+    {
+      "id": 41,
+      "publisher": "wikipedia",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Karpinsky_1899_Helicoprion_bessonowi_Fig._73.png/1280px-Karpinsky_1899_Helicoprion_bessonowi_Fig._73.png",
+      "title": "Helicoprion",
+      "period": "Permian",
+      "social_behavior": "Solitary predator",
+      "characteristics": [
+        { "feature": "length", "value": "5–8m" },
+        { "feature": "body type", "value": "Cartilaginous fish" },
+        { "feature": "diet", "value": "Carnivore" },
+        { "feature": "distinctive_feature", "value": "Spiral-toothed jaw" }
+      ],
+      "description": "Helicoprion was a shark-like fish known for its bizarre spiral whorl of teeth, resembling a buzzsaw."
     }
   ]
 }
