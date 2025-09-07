@@ -107,8 +107,8 @@
     },
     {
       "id": 4,
-      "publisher": "wikipedia",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/FMNH_Brachiosaurus.JPG/500px-FMNH_Brachiosaurus.JPG",
+      "publisher": "nhm",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Brontosaurus_skeleton_1880s.jpg/1280px-Brontosaurus_skeleton_1880s.jpg",
       "title": "Brachiosaurus",
       "period": "Late Jurassic",
       "social_behavior": "Herding",
@@ -419,6 +419,142 @@
         }
       ],
       "description": "Pachycephalosaurus is known for its thick, domed skull, likely used in head-butting contests."
+    },
+    {
+      "id": 13,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/20191203_Anomalocaris_canadensis.png/1280px-20191203_Anomalocaris_canadensis.png",
+      "title": "Anomalocaris",
+      "period": "Cambrian",
+      "social_behavior": "Likely solitary predator",
+      "characteristics": [
+        { "feature": "length", "value": "1m" },
+        { "feature": "height", "value": "0.3m" },
+        {
+          "feature": "body_type",
+          "value": "Segmented with large frontal appendages"
+        },
+        { "feature": "weight", "value": "Unknown" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Anomalocaris was one of the largest Cambrian predators, using its frontal appendages to catch prey."
+    },
+    {
+      "id": 14,
+      "publisher": "nature.com",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/H._sparsa.jpg",
+      "title": "Hallucigenia",
+      "period": "Cambrian",
+      "social_behavior": "Unknown",
+      "characteristics": [
+        { "feature": "length", "value": "0.03m" },
+        { "feature": "body_type", "value": "Soft-bodied with spines" },
+        { "feature": "diet", "value": "Likely detritivore" }
+      ],
+      "description": "Hallucigenia is a tiny, strange-looking Cambrian creature known for its spines and multiple pairs of legs."
+    },
+    {
+      "id": 15,
+      "publisher": "palaeos.org",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/2016_megalodon.jpg/1280px-2016_megalodon.jpg",
+      "title": "Megalodon",
+      "period": "Miocene-Pliocene",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "18m" },
+        { "feature": "height", "value": "5m" },
+        { "feature": "body_type", "value": "Shark" },
+        { "feature": "weight", "value": "60000kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Megalodon was the largest shark ever, dominating the oceans millions of years ago."
+    },
+    {
+      "id": 16,
+      "publisher": "smithsonianmag",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Axelrodichthys_araripensis_-_Naturmuseum_Senckenberg_-_DSC02202.JPG/1280px-Axelrodichthys_araripensis_-_Naturmuseum_Senckenberg_-_DSC02202.JPG",
+      "title": "Coelacanth",
+      "period": "Devonian-Present",
+      "social_behavior": "Solitary or small groups",
+      "characteristics": [
+        { "feature": "length", "value": "2m" },
+        { "feature": "height", "value": "0.5m" },
+        { "feature": "body_type", "value": "Lobed-finned fish" },
+        { "feature": "weight", "value": "90kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Coelacanths are living fossils, previously thought extinct, with unique lobed fins."
+    },
+    {
+      "id": 17,
+      "publisher": "nationalgeographic",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Woolly_mammoth_model_Royal_BC_Museum_in_Victoria.jpg/1280px-Woolly_mammoth_model_Royal_BC_Museum_in_Victoria.jpg",
+      "title": "Woolly Mammoth",
+      "period": "Pleistocene",
+      "social_behavior": "Herding",
+      "characteristics": [
+        { "feature": "length", "value": "3.5m" },
+        { "feature": "height", "value": "3.5m" },
+        { "feature": "skin_type", "value": "Fur-covered" },
+        { "feature": "weight", "value": "6000kg" },
+        { "feature": "reproduction", "value": "Live-bearing" },
+        { "feature": "diet", "value": "Herbivore" }
+      ],
+      "description": "Woolly Mammoths roamed cold environments in herds and had long curved tusks."
+    },
+    {
+      "id": 18,
+      "publisher": "wikipedia",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Bsp_as_i_739_modified.png",
+      "title": "Pterodactylus",
+      "period": "Late Jurassic",
+      "social_behavior": "Colonial",
+      "characteristics": [
+        { "feature": "length", "value": "1m wingspan" },
+        { "feature": "height", "value": "0.3m" },
+        { "feature": "body_type", "value": "Flying reptile" },
+        { "feature": "weight", "value": "2kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Pterodactylus was an early pterosaur with a light frame suitable for flight."
+    },
+    {
+      "id": 19,
+      "publisher": "britannica",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Dunkleosteus_marsaisi_45.JPG/1280px-Dunkleosteus_marsaisi_45.JPG",
+      "title": "Dunkleosteus",
+      "period": "Late Devonian",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "10m" },
+        { "feature": "height", "value": "2m" },
+        { "feature": "body_type", "value": "Armored fish" },
+        { "feature": "weight", "value": "4000kg" },
+        { "feature": "reproduction", "value": "Unknown" },
+        { "feature": "diet", "value": "Carnivore" }
+      ],
+      "description": "Dunkleosteus was a giant armored predator with a powerful bite in the Devonian seas."
+    },
+    {
+      "id": 20,
+      "publisher": "nature.com",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Archaeopteryx_lithographica_by_durbed.jpg/1280px-Archaeopteryx_lithographica_by_durbed.jpg",
+      "title": "Archaeopteryx",
+      "period": "Late Jurassic",
+      "social_behavior": "Likely solitary",
+      "characteristics": [
+        { "feature": "length", "value": "0.5m" },
+        { "feature": "height", "value": "0.2m" },
+        { "feature": "body_type", "value": "Feathered reptile" },
+        { "feature": "weight", "value": "0.5kg" },
+        { "feature": "reproduction", "value": "Egg-laying" },
+        { "feature": "diet", "value": "Carnivore/Insectivore" }
+      ],
+      "description": "Archaeopteryx is considered a transitional species between dinosaurs and birds."
     }
   ]
 }
