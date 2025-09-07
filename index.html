@@ -9,7 +9,7 @@
   </head>
   <body class="bg-blue-green-gradient bg-cover bg-no-repeat">
     <div
-      class="@container max-w-[120rem] min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-rows-[auto_1fr] grid-cols-[minmax(100px,1fr)_minmax(200px,2fr)] relative"
+      class="@container max-w-[120rem] min-h-[55rem] @2xl:min-h-[117rem] mx-auto overflow-hidden shadow-2xl grid grid-rows-[auto_1fr] grid-cols-[minmax(100px,1fr)_minmax(200px,2fr)] relative"
     >
       <!--header-->
       <header
@@ -82,9 +82,9 @@
                 </span>
               </button>
               <div
-                class="group-hover:block absolute top-[100%] right-0 bg-white hidden z-10"
+                class="group-hover:block absolute top-[100%] right-0 bg-white hidden z-10 min-w-[15rem] @2xl:min-w-[20rem] @5xl:min-w-[25rem] @8xl:min-w-[30rem]"
               >
-                <ul class="bookmarks_list w-full flex flex-col">
+                <ul class="bookmarks_list overflow-y-auto w-full flex flex-col @5xl:min-w-[5rem]">
                   <div
                     class="flex gap-[2px] justify-center px-[3px] py-[5rem] @5xl:px-[5px] @8xl:gap-[1rem]"
                   >
@@ -109,8 +109,6 @@
       <div class="bg-white flex flex-col pt-[1rem]">
         <ul class="results"></ul>
 
-        <!--  -->
-
         <!--pagination section-->
         <div
           class="pagination flex justify-between flex-wrap gap-[2px] p-[1rem] @5xl:p-[2rem]"
@@ -133,8 +131,6 @@
             Start by searching for dinosaur or characteristic. Have fun!
           </p>
         </div>
-
-        <!---->
       </div>
 
       <!--add card form-->
@@ -145,7 +141,7 @@
         class="add-flashcard-window hidden absolute z-10 left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
       >
         <button
-          class="close-btn absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem] hover:scale-105 duration-500 ease-in-out"
+          class="close-btn absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:pr-[1rem] hover:scale-105 duration-500 ease-in-out"
         >
           &times;
         </button>
