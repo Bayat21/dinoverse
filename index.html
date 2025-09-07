@@ -52,7 +52,7 @@
           >
             <!--add card-->
             <li
-              class="flex items-center justify-center w-1/2 hover:bg-grey-1/30 duration-500 ease-in-out @2xl:h-full @2xl:px-[5px]"
+              class="add-card-btn flex items-center justify-center w-1/2 hover:bg-grey-1/30 duration-500 ease-in-out @2xl:h-full @2xl:px-[5px]"
             >
               <button class="text-light-blue flex items-center @2xl:gap-[3px]">
                 <svg
@@ -150,15 +150,18 @@
       </div>
 
       <!--add card form-->
-      <!-- <div
-        class="absolute left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
+      <div
+        class="overlay hidden bg-gray-700/60 absolute w-full h-full z-5"
+      ></div>
+      <div
+        class="add-flashcard-window hidden absolute z-10 left-[50%] top-[15%] translate-x-[-50%] bg-white py-[2rem] px-[2rem] shadow-2xl w-full rounded-2xl @2xl:max-w-[40rem] @5xl:max-w-[80rem] @8xl:px-[3rem] @5xl:py-[5rem]"
       >
         <button
-          class="absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem] hover:scale-105 duration-500 ease-in-out" 
+          class="close-btn absolute top-0 right-2 text-[20px] @5xl:text-[25px] @8xl:text-[30px] @8xl:right-[1rem] hover:scale-105 duration-500 ease-in-out"
         >
           &times;
         </button>
-        <form class="w-full flex flex-wrap">
+        <form class="upload-form w-full flex flex-wrap">
           <div
             class="w-[50%] pr-[1rem] grid @5xl:grid-cols-[auto_1fr] @5xl:gap-[1rem] @5xl:items-center @8xl:gap-[2rem]"
           >
@@ -169,7 +172,7 @@
             </h3>
             <label class="add-card-label">Name</label>
             <input
-              value="TEST"
+              placeholder="Allosaurus"
               required
               name="title"
               type="text"
@@ -177,7 +180,7 @@
             />
             <label class="add-card-label">period</label>
             <input
-              value="TEST"
+              placeholder="Jurassic"
               required
               name="period"
               type="text"
@@ -185,7 +188,7 @@
             />
             <label class="add-card-label">Image URL</label>
             <input
-              value="TEST"
+              placeholder="https://address.jpg"
               required
               name="image"
               type="text"
@@ -193,26 +196,27 @@
             />
             <label class="add-card-label">Resource</label>
             <input
-              value="TEST"
+              placeholder="nhm"
               required
               name="publisher"
               type="text"
               class="add-card-input"
             />
-            <label class="add-card-label">social_behavior</label>
+            <label class="add-card-label">Social behavior</label>
             <input
-              value="text"
+              placeholder="Pack Hunter"
               required
               name="socialBehavior"
-              type="number"
+              type="text"
               class="add-card-input"
             />
-            <label class="add-card-label">description</label>
+            <label class="add-card-label">Description</label>
             <input
-              value="text"
+              placeholder="Allosaurus was a top predator before T. rex appeared."
               required
               name="description"
               type="text"
+              class="add-card-input"
             />
           </div>
 
@@ -224,50 +228,46 @@
             >
               characteristics
             </h3>
-            <label class="add-card-label">charactistic 1</label>
+            <label class="add-card-label">characteristic 1</label>
             <input
-              value=""
               type="text"
-              required
-              name="charactistic-1"
-              placeholder="Format: ''"
+              name="characteristic-1"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
-            <label class="add-card-label">charactistic 2</label>
+            <label class="add-card-label">characteristic 2</label>
             <input
-              value=""
               type="text"
-              name="charactisticcharactistic-2"
-              placeholder="Format: ''"
+              name="characteristic-2"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
-            <label class="add-card-label">charactistic 3</label>
+            <label class="add-card-label">characteristic 3</label>
             <input
-              value=""
               type="text"
-              name="charactisticcharactistic-3"
-              placeholder="Format: '"
+              name="characteristic-3"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
-            <label class="add-card-label">charactistic 4</label>
+            <label class="add-card-label">characteristic 4</label>
             <input
               type="text"
-              name="charactisticcharactistic-4"
-              placeholder="Format: ''"
+              name="characteristic-4"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
-            <label class="add-card-label">charactistic 5</label>
+            <label class="add-card-label">characteristic 5</label>
             <input
               type="text"
-              name="charactistic-5"charactistic
-              placeholder="Format: ''"
+              name="characteristic-5"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
-            <label class="add-card-label">charactistic 6</label>
+            <label class="add-card-label">characteristic 6</label>
             <input
               type="text"
-              name="charactistic-6"
-              placeholder="Format: ''"
+              name="characteristic-6"
+              placeholder="Format: feature, value"
               class="add-card-input"
             />
           </div>
@@ -288,7 +288,7 @@
             </button>
           </div>
         </form>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>

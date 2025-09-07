@@ -4,6 +4,8 @@ import resultsView from "./views/resultsView.js";
 import searchView from "./views/searchView.js";
 import paginationView from "./views/paginationView.js";
 import bookmarksView from "./views/bookmarksView.js";
+import addFlashcardView from "./views/addFlashcardView.js";
+import { MODAL_CLOSE_SEC } from "./config.js";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 
@@ -72,12 +74,31 @@ const controlBookmarks = function () {
   bookmarksView.render(model.state.bookmarks);
 };
 
+const controlAddFlashcard = async function (newFlashcard) {
+  try {
+    addFlashcardView.renderSpinner();
+
+    await model.uploadFlashcard(newFlashcard);
+
+    flashcardView.render(model.state.flashcard)
+
+    addFlashcardView.renderMessage()
+
+    setTimeout(function() {
+      addFlashcardView.toggleWindow()
+    }, MODAL_CLOSE_SEC * 1000)
+  } catch (err) {
+    addFlashcardView.renderError(err)
+  }
+};
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
   flashcardView.addHandlerRender(controlFlashcard);
   flashcardView.addHandlerAddBookmark(controlAddBookmark);
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addhandlerClick(controlPagination);
+  addFlashcardView.addHanderUpload(controlAddFlashcard);
 };
 
 init();

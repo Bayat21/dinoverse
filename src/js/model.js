@@ -1,6 +1,6 @@
 import { Result } from "postcss";
 import { API_URL } from "./config";
-import { getJSON } from "./helpers";
+import { getJSON, sendJSON } from "./helpers";
 import { RES_PER_PAGE } from "./config";
 
 export const state = {
@@ -14,22 +14,26 @@ export const state = {
   bookmarks: [],
 };
 
+const createFlashcardObject = function (flashcard) {
+  return {
+    id: flashcard.id,
+    title: flashcard.title,
+    publisher: flashcard.publisher,
+    image: flashcard.image_url,
+    period: flashcard.period,
+    socialBehavior: flashcard.social_behavior,
+    characteristics: flashcard.characteristics,
+    description: flashcard.description,
+  };
+};
+
 export const loadFlashcard = async function (id) {
   try {
     const flashcard = await getJSON(`${API_URL}/${id}`);
 
-    state.flashcard = {
-      id: flashcard.id,
-      title: flashcard.title,
-      publisher: flashcard.publisher,
-      image: flashcard.image_url,
-      period: flashcard.period,
-      socialBehavior: flashcard.social_behavior,
-      characteristics: flashcard.characteristics,
-      description: flashcard.description,
-    };
+    state.flashcard = createFlashcardObject(flashcard);
 
-    if (state.bookmarks.some((bookmark) => String(bookmark.id) === id)) 
+    if (state.bookmarks.some((bookmark) => String(bookmark.id) === id))
       state.flashcard.bookmarked = true;
     else state.flashcard.bookmarked = false;
   } catch (err) {
@@ -58,7 +62,6 @@ export const loadSearchResults = async function (query) {
   }
 };
 
-
 export const getSearchResultsPage = function (page = state.search.page) {
   state.search.page = page;
   const start = (page - 1) * state.search.resultsPerPage;
@@ -66,16 +69,15 @@ export const getSearchResultsPage = function (page = state.search.page) {
   return state.search.results.slice(start, end);
 };
 
-const persistBookmarks = function() {
-  localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks))
-}
-
+const persistBookmarks = function () {
+  localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
+};
 
 export const addBookmark = function (flashcard) {
   state.bookmarks.push(flashcard);
-  if ((flashcard.id === state.flashcard.id))  state.flashcard.bookmarked = true;
+  if (flashcard.id === state.flashcard.id) state.flashcard.bookmarked = true;
 
-  persistBookmarks()
+  persistBookmarks();
 };
 
 export const deleteBookmark = function (id) {
@@ -83,12 +85,48 @@ export const deleteBookmark = function (id) {
   state.bookmarks.splice(index, 1);
   if (id === state.flashcard.id) state.flashcard.bookmarked = false;
 
-  persistBookmarks()
+  persistBookmarks();
 };
 
-const init = function() {
-  const storage = localStorage.getItem("bookmarks")
-  if(storage) state.bookmarks = JSON.parse(storage)
-}
+const init = function () {
+  const storage = localStorage.getItem("bookmarks");
+  if (storage) state.bookmarks = JSON.parse(storage);
+};
 
-init()
+init();
+
+export const uploadFlashcard = async function (newFlashcard) {
+  try {
+    const characteristics = Object.entries(newFlashcard)
+      .filter(
+        (entry) => entry[0].startsWith("characteristic") && entry[1] !== ""
+      )
+      .map((ch) => {
+        const chArr = ch[1].split(",");
+
+        if (chArr.length !== 2) {
+          throw new Error(
+            "please use the correct format for characteristics !"
+          );
+        }
+
+        const [feature, value] = chArr;
+        return { feature, value };
+      });
+    const flashcard = {
+      title: newFlashcard.title,
+      publisher: newFlashcard.publisher,
+      image_url: newFlashcard.image,
+      period: newFlashcard.period,
+      social_behavior: newFlashcard.socialBehavior,
+      characteristics,
+      description: newFlashcard.description,
+    };
+
+    const data = await sendJSON(API_URL, flashcard);
+    state.flashcard = createFlashcardObject(data);
+    addBookmark(state.flashcard);
+  } catch (err) {
+    throw err;
+  }
+};
