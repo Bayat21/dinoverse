@@ -1,4 +1,5 @@
 import View from "./View";
+import icons from "url:../../img/icons.svg";
 
 class PreviewView extends View {
   _parentElement = "";
@@ -27,6 +28,13 @@ class PreviewView extends View {
                 <p class="text-xs @2xl:text-lg @5xl:text-xl @8xl:text-2xl">
                   ${this._data.publisher}
                 </p>
+                <div class="${this._data.key ? "" : "hidden"}  absolute right-0 bottom-0">
+                <svg
+                  class="w-[0.85rem] h-[0.85rem] text-regal-blue fill-current bg-grey-2 rounded-full p-[2px] @2xl:w-[1.2rem] @2xl:h-[1.2rem] @5xl:w-[1.5rem] @5xl:h-[1.5rem] @8xl:w-[2.2rem] @8xl:h-[2.2rem] @8xl:p-[5px] @8xl:translate-1"
+                >
+                  <use href="${icons}#icon-user"></use>
+                </svg>
+              </div>
               </div>
             </a>
           </li>

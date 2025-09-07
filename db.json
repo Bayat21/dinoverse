@@ -485,6 +485,22 @@
       ],
       "description": "robjg",
       "id": 16
+    },
+    {
+      "title": "Dinosaur",
+      "publisher": "Anoosha",
+      "image_url": "hjfdbvhjdbvjdfbljvbldsf",
+      "period": "jurassic",
+      "social_behavior": "hunter",
+      "characteristics": [
+        {
+          "feature": "teeth",
+          "value": " yes"
+        }
+      ],
+      "description": "i love dinosaurs",
+      "key": "user-flashcard",
+      "id": 17
     }
   ]
 }

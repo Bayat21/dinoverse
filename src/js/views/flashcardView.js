@@ -65,20 +65,23 @@ class FlashcardView extends View {
             </div>
           </div>
           <div class="flex gap-2 items-center justify-center @8xl:gap-[1.5rem]">
-            <!--<div class="flex items-center justify-center">
+            <div class="${
+              this._data.key ? "" : "hidden"
+            } flex items-center justify-center">
               <svg
                 class="w-[2rem] h-[2rem] text-light-blue bg-grey-3 fill-current rounded-full p-[3px] @8xl:p-[5px] @8xl:w-[3rem] @8xl:h-[3rem]"
               >
                 <use href="${icons}#icon-user"></use>
               </svg>
-            </div>-->
+            </div>
             <button class="btn_bookmark">
               <svg
                 class="w-[2.5rem] h-[2.5rem] text-white bg-blue-green-gradient px-[0.5rem] fill-current rounded-full @8xl:w-[3.5rem] @8xl:h-[3.5rem]"
               >
                 <use href="${icons}#icon-bookmark${
       this._data.bookmarked ? "-fill" : ""
-    }"></use>
+    }">
+                </use>
               </svg>
             </button>
           </div>

@@ -80,15 +80,19 @@ const controlAddFlashcard = async function (newFlashcard) {
 
     await model.uploadFlashcard(newFlashcard);
 
-    flashcardView.render(model.state.flashcard)
+    flashcardView.render(model.state.flashcard);
 
-    addFlashcardView.renderMessage()
+    addFlashcardView.renderMessage();
 
-    setTimeout(function() {
-      addFlashcardView.toggleWindow()
-    }, MODAL_CLOSE_SEC * 1000)
+    bookmarksView.render(model.state.bookmarks);
+
+    window.history.pushState(null, "", `#${model.state.flashcard.id}`);
+
+    setTimeout(function () {
+      addFlashcardView.toggleWindow();
+    }, MODAL_CLOSE_SEC * 1000);
   } catch (err) {
-    addFlashcardView.renderError(err)
+    addFlashcardView.renderError(err);
   }
 };
 

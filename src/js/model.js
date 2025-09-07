@@ -24,6 +24,7 @@ const createFlashcardObject = function (flashcard) {
     socialBehavior: flashcard.social_behavior,
     characteristics: flashcard.characteristics,
     description: flashcard.description,
+    ...(flashcard.key && { key: flashcard.key })
   };
 };
 
@@ -54,6 +55,7 @@ export const loadSearchResults = async function (query) {
         title: res.title,
         image: res.image_url,
         publisher: res.publisher,
+        ...(res.key && { key: res.key })
       };
     });
   } catch (err) {
@@ -121,6 +123,7 @@ export const uploadFlashcard = async function (newFlashcard) {
       social_behavior: newFlashcard.socialBehavior,
       characteristics,
       description: newFlashcard.description,
+      key: "user-flashcard"
     };
 
     const data = await sendJSON(API_URL, flashcard);
