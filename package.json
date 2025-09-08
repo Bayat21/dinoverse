@@ -2,7 +2,7 @@
   "name": "dinoverse",
   "version": "1.0.0",
   "description": "",
-  "default": "index.html",
+ 
   "scripts": {
     "dev:client": "parcel index.html",
     "dev:api": "json-server --watch db.json --port 5174 ",
