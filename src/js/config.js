@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:5174/dinosaurs";
-export const TIMEOUT_SEC = 10
+export const API_URL = "https://dinoverse-db.onrender.com/dinosaurs";
+export const TIMEOUT_SEC = 10;
 export const RES_PER_PAGE = 10;
-export const MODAL_CLOSE_SEC = 2.5
+export const MODAL_CLOSE_SEC = 2.5;
