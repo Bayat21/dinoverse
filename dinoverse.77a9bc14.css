@@ -402,6 +402,11 @@
     display: none;
   }
 
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+
   .h-\[0\.85rem\] {
     height: .85rem;
   }
@@ -1157,6 +1162,12 @@
   .\@5xl\:col-span-2 {
     @container (width >= 64rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+
+  .\@5xl\:\!block {
+    @container (width >= 64rem) {
+      display: block !important;
     }
   }
 
