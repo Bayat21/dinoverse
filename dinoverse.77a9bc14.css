@@ -398,6 +398,10 @@
     display: none;
   }
 
+  .inline {
+    display: inline;
+  }
+
   .h-\[0\.85rem\] {
     height: .85rem;
   }
@@ -869,18 +873,9 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
-  .delay-3000 {
-    transition-delay: 3s;
-  }
-
   .duration-500 {
     --tw-duration: .5s;
     transition-duration: .5s;
-  }
-
-  .duration-700 {
-    --tw-duration: .7s;
-    transition-duration: .7s;
   }
 
   .ease-in-out {
