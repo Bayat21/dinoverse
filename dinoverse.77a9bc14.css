@@ -398,6 +398,11 @@
     display: none;
   }
 
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
+
   .h-\[0\.85rem\] {
     height: .85rem;
   }
