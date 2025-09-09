@@ -7,7 +7,7 @@
     "dev:api": "json-server --watch db.json --port 5174 ",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:api\"",
     "start": "parcel index.html",
-    "build": "parcel build index.html --dist-dir ./dist --public-url ./",
+    "build": "parcel build index.html --dist-dir ./dist --public-url /dinoverse/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
