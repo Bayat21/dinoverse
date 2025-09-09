@@ -330,6 +330,10 @@
     container-type: inline-size;
   }
 
+  .invisible {
+    visibility: hidden;
+  }
+
   .absolute {
     position: absolute;
   }
